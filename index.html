@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="de-CH" class="warte">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ambassador-Briefing Zürich</title>
+<meta name="description" content="Internes Briefing für Ludwig in Zürich: was Tasty Studios verkauft, die sieben Werkzeuge live, welche Häuser passen, wie ein Gespräch läuft, Preise, Fragen, Grenzen und Beteiligung. Stand 11.11.2026.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#111421">
+<link rel="icon" href="img/logo-tasty.png">
+<link rel="preload" href="fonts/Antonio-normal-100_700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/InstrumentSans-normal-400_600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/DMMono-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.remove('warte')},4000)</script>
+<style>
+/* Tasty Studios · Arbeitspapier als Landingpage (06.11.2026). Sprache der Agentur-Seite: Nachtblau, Creme, Champagner als Linie.
+   Bewegung nur über transform und opacity, nativer Scroll, ein Element in Bewegung je Blick. Bilder blenden nie auf, sie steigen und setzen sich. */
+@font-face{font-family:'Antonio';src:url('fonts/Antonio-normal-100_700.woff2') format('woff2');font-weight:100 700;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url('fonts/InstrumentSans-normal-400_600.woff2') format('woff2');font-weight:400 600;font-display:swap}
+@font-face{font-family:'DM Mono';src:url('fonts/DMMono-normal-400.woff2') format('woff2');font-weight:400;font-display:swap}
+:root{
+  --nacht:#111421;--navy:#1f213b;--tief:#0c0e18;--knopf:#151929;
+  --creme:#ebdbce;--gold:#c7b489;--taupe:#9e947f;--offen:#e2a072;--papier:#f5eee6;--tinte:#0b0c10;
+  --fg:#f3ede2;--leise:rgba(243,237,226,.74);--linie:rgba(235,219,206,.18);
+  --titel:'Antonio','Arial Narrow','Helvetica Neue',sans-serif;--sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'DM Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --e1:cubic-bezier(.16,1,.3,1);--e2:cubic-bezier(.32,.72,0,1);--feder:cubic-bezier(.28,1.42,.42,1);
+  --rand:clamp(20px,4.6vw,76px);--max:1400px;--abschnitt:clamp(56px,6vw,100px);--r-xl:30px;--r-l:22px;
+  --platte:linear-gradient(180deg,#262a3f,#1a1d2d 46%,#15182a);
+  --platte-s:inset 0 1px 0 rgba(255,255,255,.14),inset 0 0 0 1px rgba(235,219,206,.12),0 2px 0 #07080d,0 40px 50px -32px rgba(0,0,0,.8);
+  --kuhle:linear-gradient(180deg,#0e1019,#121524 34%,#13162a);
+  --kuhle-s:inset 0 3px 6px -1px rgba(0,0,0,.62),inset 0 1px 0 rgba(0,0,0,.55),inset 0 0 0 1px rgba(0,0,0,.26),0 1px 0 rgba(255,255,255,.08);
+  --tapete:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill='none' stroke='%23ebdbce' stroke-opacity='0.07' stroke-width='1.1'%3E%3Cpath d='M0 0L150 150L300 0M0 300L150 150L300 300' stroke-width='.7'/%3E%3Ccircle cx='150' cy='150' r='40'/%3E%3Ccircle cx='150' cy='150' r='35' stroke-width='.6'/%3E%3Cpath d='M150 110v80M110 150h80' stroke-width='.6'/%3E%3C/g%3E%3C/svg%3E");
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:auto;background:var(--nacht)}
+html.warte body{visibility:hidden}
+body{margin:0;background:var(--nacht);color:var(--fg);font-family:var(--sans);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:var(--gold);text-decoration:none;text-underline-offset:3px}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+p{margin:0}
+h1,h2,h3,h4{margin:0;font-weight:700}
+em{font-style:normal;color:var(--creme)}
+.in{max-width:var(--max);margin:0 auto;position:relative}
+.fl{position:relative;padding:var(--abschnitt) var(--rand)}
+.fl--navy{background:var(--navy)}
+.fl--tief{background:var(--tief)}
+.fl--nacht{background:var(--nacht)}
+.tapete{isolation:isolate}
+.tapete::before{content:'';position:absolute;inset:0;z-index:-1;background-image:var(--tapete);background-size:300px;opacity:.5;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,#000 20%,transparent 100%);mask-image:linear-gradient(180deg,#000 20%,transparent 100%)}
+
+/* ---------- Schrift ---------- */
+.d1,.d2,.d3,.d4{font-family:var(--titel);font-weight:700;text-transform:uppercase;letter-spacing:.012em;line-height:1.04;text-wrap:balance}
+.d1{font-size:clamp(3rem,7.6vw,8.2rem);line-height:.98}
+.d2{font-size:clamp(2.4rem,5.6vw,5.4rem);line-height:1.02}
+.d3{font-size:clamp(1.7rem,3vw,2.8rem);line-height:1.1;letter-spacing:.015em}
+.d4{font-size:clamp(1.25rem,1.7vw,1.6rem);font-weight:600;line-height:1.15;letter-spacing:.03em}
+.lauf{font-size:clamp(1.02rem,1.14vw,1.18rem);line-height:1.66;max-width:58ch;color:var(--leise)}
+.lauf p+p{margin-top:1.05em}
+.mono{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.z{display:block;overflow:hidden;padding:.2em .08em .1em;margin:-.2em -.08em -.1em}
+.z>span{display:block;transform:translateY(112%);transition:transform 1.25s var(--e1);transition-delay:calc(var(--vz,0ms) + var(--n,0)*90ms)}
+.da .z>span,.z.da>span{transform:none}
+.z:nth-child(2)>span{--n:1}.z:nth-child(3)>span{--n:2}.z:nth-child(4)>span{--n:3}
+/* Kapitelzeile: Nummer, Strich, Wort */
+.kap{display:flex;align-items:center;gap:clamp(12px,1.4vw,20px);font-family:var(--titel);font-weight:600;font-size:clamp(1rem,1.3vw,1.3rem);letter-spacing:.07em;text-transform:uppercase;color:var(--taupe);line-height:1.3}
+.kap i{flex:none;width:clamp(34px,4.4vw,72px);height:1px;background:currentColor;opacity:.75;transform-origin:left;transform:scaleX(0);transition:transform 1.2s var(--e1) .2s}
+.da .kap i,.kap.da i{transform:none}
+
+/* ---------- Hereinkommen ---------- */
+.js [data-r]{opacity:0;transform:translateY(32px);transition:opacity 1s var(--e1),transform 1.3s var(--e1);transition-delay:calc(var(--vz,0ms) + var(--i,0)*90ms)}
+.js [data-r].da{opacity:1;transform:none}
+.js [data-r="titel"]{opacity:1;transform:none}
+.js [data-r="bild"]{opacity:1;transform:translateY(60px)}
+.js [data-r="bild"] img{transform:scale(1.13);transition:transform 1.9s var(--e1);transition-delay:calc(var(--vz,0ms) + var(--i,0)*90ms)}
+.js [data-r="bild"].da img{transform:none}
+.js [data-r="edel"]{opacity:0;transform:translateY(46px) scale(.975);transform-origin:50% 100%;transition:opacity 1.5s cubic-bezier(.22,1,.36,1),transform 2s var(--e1);transition-delay:calc(var(--vz,0ms) + var(--i,0)*150ms)}
+.js [data-r="edel"].da{opacity:1;transform:none}
+.js [data-r="edel"] .bild img{transform:scale(1.12);transition:transform 2.6s var(--e1);transition-delay:calc(var(--vz,0ms) + var(--i,0)*150ms)}
+.js [data-r="edel"].da .bild img{transform:none}
+.js [data-r="schweb"]{opacity:1;transform:translate3d(0,clamp(80px,9vw,140px),0) scale(.93);transform-origin:50% 100%;transition:transform 2.1s var(--feder);transition-delay:calc(var(--vz,0ms) + var(--i,0)*110ms)}
+.js [data-r="schweb"].da{transform:none}
+/* Staffel von links: eine Reihe, die man nacheinander liest. Kurz, schnell */
+.js [data-r="staffel"]{opacity:0;transform:translateX(-22px);transition:opacity .7s var(--e1),transform .8s var(--e1);transition-delay:calc(var(--vz,0ms) + var(--i,0)*70ms)}
+.js [data-r="staffel"].da{opacity:1;transform:none}
+/* Linie, die sich zieht */
+.js .linie-zieht{transform-origin:left;transform:scaleX(0);transition:transform 1.8s var(--e1) .25s}
+.js .da .linie-zieht,.js .linie-zieht.da{transform:none}
+
+/* ---------- Leiste und Fortschritt ---------- */
+.leiste{position:fixed;z-index:60;top:0;left:0;right:0;height:64px;padding:0 var(--rand);display:flex;align-items:center;justify-content:space-between;gap:20px;background:var(--nacht);box-shadow:inset 0 -1px 0 var(--linie);transition:transform .6s var(--e2)}
+.leiste.weg{transform:translateY(-100%)}
+.leiste .marke{display:inline-flex;align-items:center;gap:12px;font-family:var(--titel);font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase;color:#fff}
+.leiste .marke img{width:26px;height:26px;object-fit:contain}
+.leiste .mitte{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
+.leiste nav{display:flex;gap:22px}
+.leiste nav a{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--leise)}
+.leiste nav a:hover,.leiste nav a.an{color:var(--gold);text-decoration:none}
+.fortschritt{position:fixed;z-index:61;top:63px;left:0;width:100%;height:1px;background:var(--gold);transform-origin:left;transform:scaleX(0);transition:top .6s var(--e2)}
+.leiste.weg~.fortschritt{top:0}
+/* Kapitel-Leiste rechts: 19 Zahlen, die aktuelle in Champagner */
+.rail{position:fixed;z-index:50;right:max(14px,calc(var(--rand)*.35));top:50%;transform:translateY(-50%);display:none;flex-direction:column;gap:5px}
+.rail a{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:rgba(243,237,226,.32);line-height:1;padding:2px 6px;display:flex;align-items:center;gap:8px;transition:color .5s var(--e2)}
+.rail a::before{content:'';width:6px;height:1px;background:currentColor;transition:width .5s var(--e2)}
+.rail a:hover,.rail a.an{color:var(--gold);text-decoration:none}
+.rail a.an::before{width:16px}
+.rail .t2{margin-top:10px;padding-top:10px;border-top:1px solid var(--linie)}
+@media (min-width:1180px){.rail{display:flex}}
+
+/* ---------- Auftakt ---------- */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);min-height:100svh;background:var(--nacht);isolation:isolate;overflow:clip}
+.hero__t{position:relative;display:grid;align-content:center;gap:clamp(22px,2.6vw,36px);padding:clamp(120px,16vh,180px) clamp(28px,4vw,64px) clamp(60px,8vh,100px) var(--rand)}
+.hero__t::before{content:'';position:absolute;inset:0;z-index:-1;background-image:var(--tapete);background-size:300px;opacity:.5;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 100%);mask-image:linear-gradient(180deg,#000 30%,transparent 100%)}
+.hero .d1{color:#fff}
+.hero .d1 em{color:var(--creme)}
+.hero__sub{font-size:clamp(1.08rem,1.3vw,1.3rem);line-height:1.6;max-width:52ch;color:var(--leise)}
+.hero__meta{display:flex;flex-wrap:wrap;gap:8px 28px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.hero__meta b{font-weight:400;color:var(--creme)}
+.hero__b{position:relative;overflow:clip;min-height:56svh}
+.hero__b img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%;transform:scale(1.08);transition:transform 2.6s var(--e1)}
+.da .hero__b img{transform:none}
+.hero__b::after{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--linie)}
+.hero__b .schild{position:absolute;left:clamp(20px,3vw,44px);bottom:clamp(20px,3vw,40px);font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--creme);text-shadow:0 1px 2px rgba(3,10,16,.9)}
+.kn-reihe{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* ---------- Knopf mit Tiefe: Lichtkante oben, Schattenkante unten, Knauf mit Pfeil ---------- */
+.kn{--o:#f8eee4;--m:#ebdbce;--u:#d6c2b1;--t:var(--tinte);--licht:rgba(255,255,255,.9);--kante:rgba(104,80,58,.34);--tf:rgba(0,0,0,.6);--ko:#2b3049;--ku:#0a0c15;--kt:var(--creme);--klicht:rgba(255,255,255,.22);--streif:rgba(255,255,255,.5);
+  position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;gap:14px;height:54px;padding:0 7px 0 26px;border-radius:999px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.17em;text-transform:uppercase;white-space:nowrap;color:var(--t);text-decoration:none;
+  background:linear-gradient(180deg,var(--o) 0%,var(--m) 46%,var(--u) 100%);
+  box-shadow:inset 0 1px 0 var(--licht),inset 0 -3px 0 var(--kante),inset 0 0 0 1px rgba(255,255,255,.08),0 1px 1px rgba(0,0,0,.3),0 16px 26px -14px var(--tf);
+  transition:transform .55s var(--e2),box-shadow .55s var(--e2)}
+.kn:hover{text-decoration:none;transform:translateY(-2px);box-shadow:inset 0 1px 0 var(--licht),inset 0 -3px 0 var(--kante),inset 0 0 0 1px rgba(255,255,255,.08),0 2px 2px rgba(0,0,0,.25),0 24px 32px -16px var(--tf)}
+.kn:active{transform:translateY(1px) scale(.985)}
+.kn::after{content:'';position:absolute;z-index:-1;top:-20%;bottom:-20%;left:0;width:38%;background:linear-gradient(100deg,transparent 0%,var(--streif) 50%,transparent 100%);transform:translateX(-180%) skewX(-18deg);transition:transform 0s}
+.kn:hover::after{transform:translateX(360%) skewX(-18deg);transition:transform 1s var(--e1)}
+.kn i{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,var(--ko),var(--ku));color:var(--kt);box-shadow:inset 0 1px 0 var(--klicht),inset 0 -2px 0 rgba(0,0,0,.28),0 3px 6px rgba(0,0,0,.35);transition:transform .6s var(--e2)}
+.kn:hover i{transform:translateX(2px) scale(1.05)}
+.kn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.3;transition:transform .6s var(--e2)}
+.kn:hover svg{transform:translateY(2px)}
+.kn--zwei{--o:#343a56;--m:#1e2236;--u:#11141f;--t:#fff;--licht:rgba(255,255,255,.24);--kante:rgba(0,0,0,.45);--tf:rgba(0,0,0,.55);--ko:#f8eee4;--ku:#d6c2b1;--kt:var(--tinte);--klicht:rgba(255,255,255,.9);--streif:rgba(255,255,255,.16)}
+
+/* ---------- Platte ---------- */
+.platte{position:relative;isolation:isolate;overflow:hidden;border-radius:var(--r-l);background:var(--platte);box-shadow:var(--platte-s);padding:clamp(22px,2.4vw,32px);display:grid;gap:12px;align-content:start;min-width:0;transition:transform 2.8s var(--e2)}
+.platte:hover{transform:translateY(-4px);transition-duration:2.2s}
+.platte::after{content:'';position:absolute;z-index:1;top:-30%;bottom:-30%;left:0;width:30%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.07) 50%,transparent 100%);transform:translateX(-200%) skewX(-18deg);pointer-events:none}
+.platte:hover::after{transform:translateX(460%) skewX(-18deg);transition:transform 1.4s var(--e1)}
+.platte small{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.platte small.offen{color:var(--offen)}
+.platte h3{font-family:var(--titel);font-weight:600;text-transform:uppercase;font-size:clamp(1.3rem,1.8vw,1.7rem);line-height:1.12;letter-spacing:.025em;color:#fff}
+.platte p{font-size:15.5px;line-height:1.6;color:var(--leise)}
+.platten{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px}
+.platten--2{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.kuhle{border-radius:var(--r-l);background:var(--kuhle);box-shadow:var(--kuhle-s)}
+
+/* ---------- Fenster: Bild und Satz stehen fest, der Ausschnitt scrollt darüber ---------- */
+.durchblick{position:relative;overflow:clip;height:58svh;min-height:380px;color:#fff;background:#0d0f19;isolation:isolate}
+.durchblick--hoch{height:72svh}
+.durchblick__h{position:absolute;left:0;right:0;top:-100lvh;bottom:-100lvh}
+.durchblick__b{position:sticky;top:0;height:100lvh}
+.durchblick__b img{width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%)}
+.durchblick__t{position:sticky;top:0;height:100lvh;margin-top:-100lvh;display:grid;place-items:center;padding:0 var(--rand);text-align:center}
+.durchblick__t .kap{justify-content:center;margin-bottom:clamp(14px,1.6vw,22px)}
+.durchblick__t .kap::after{content:'';flex:none;width:clamp(34px,4.4vw,72px);height:1px;background:currentColor;opacity:.75}
+.durchblick__t .kap{color:var(--creme);text-shadow:0 1px 2px rgba(3,10,16,.9)}
+.durchblick .d2{font-size:clamp(2.1rem,5.6vw,5.6rem);max-width:16em;margin:0 auto}
+.durchblick .d2 .z{overflow:visible;clip-path:inset(0 -.6em)}
+.durchblick .d2.da .z{clip-path:inset(-.9em -.6em);transition:clip-path 0s 1.5s}
+.durchblick .d2 .z>span{text-shadow:0 .02em .04em rgba(3,10,16,0),0 .06em .16em rgba(3,10,16,0),0 .14em .42em rgba(3,10,16,0);transition:transform 1.25s var(--e1),text-shadow .9s ease;transition-delay:calc(var(--n,0)*90ms),1.5s}
+.durchblick .d2.da .z>span{text-shadow:0 .02em .04em rgba(3,10,16,.82),0 .06em .16em rgba(3,10,16,.7),0 .14em .42em rgba(3,10,16,.5)}
+.durchblick .unter{display:block;margin:clamp(16px,1.8vw,26px) auto 0;max-width:46ch;font-size:clamp(1rem,1.2vw,1.2rem);line-height:1.55;color:var(--creme);text-shadow:0 1px 3px rgba(3,10,16,.9)}
+.durchblick .quelle{display:block;margin-top:14px;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);text-shadow:0 1px 2px rgba(3,10,16,.9)}
+
+/* ---------- Kapitel ---------- */
+.kapitel{position:relative;padding:var(--abschnitt) var(--rand);scroll-margin-top:64px}
+.kapitel .in{display:grid;gap:clamp(40px,4.6vw,72px)}
+.kopf{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,72px);align-items:end}
+.kopf__l{display:grid;gap:10px}
+.kopf__nr{font-family:var(--titel);font-weight:700;font-size:clamp(5.5rem,12vw,12rem);line-height:.86;letter-spacing:-.01em;color:transparent;-webkit-text-stroke:1px rgba(235,219,206,.42);text-stroke:1px rgba(235,219,206,.42)}
+.kopf__r{display:grid;gap:clamp(18px,2vw,28px)}
+.kopf .d2{color:#fff}
+.block{display:grid;gap:clamp(18px,2vw,28px)}
+.block>h3.d4{color:var(--creme)}
+.liste{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.liste li{position:relative;padding-left:26px;font-size:clamp(1rem,1.1vw,1.1rem);line-height:1.6;color:var(--leise)}
+.liste li::before{content:'';position:absolute;left:0;top:.78em;width:11px;height:1px;background:var(--gold)}
+.liste li b{font-weight:500;color:var(--fg)}
+.zwei{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,3vw,48px);align-items:start}
+.drei{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+/* Kasten: Offen in Kupfer, Vorschlag in Champagner */
+.kasten{display:grid;gap:12px;padding:clamp(20px,2.2vw,28px);border-radius:var(--r-l);background:var(--kuhle);box-shadow:var(--kuhle-s)}
+.kasten .mark{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--offen);display:inline-flex;align-items:center;gap:10px}
+.kasten .mark::before{content:'';width:18px;height:1px;background:currentColor}
+.kasten.vs .mark{color:var(--gold)}
+.kasten p,.kasten li{font-size:15.5px;color:var(--leise)}
+.kasten p b{font-weight:500;color:var(--fg)}
+.kasten .liste{gap:10px}
+.marke{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:10px}
+.marke::before{content:'';width:18px;height:1px;background:currentColor}
+.marke.offen{color:var(--offen)}
+/* Leitsatz */
+.leitsatz{display:grid;gap:14px;padding-left:clamp(20px,2.4vw,34px);border-left:2px solid var(--gold);max-width:34em}
+.leitsatz .d3{color:#fff}
+.leitsatz .quelle{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe)}
+/* Grosse Zahlen */
+.zahlen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:16px}
+.zahl{display:grid;gap:6px;padding:clamp(20px,2.2vw,30px) 0 0;border-top:1px solid var(--linie)}
+.zahl b{font-family:var(--titel);font-weight:700;font-size:clamp(3.6rem,6.4vw,6.4rem);line-height:.92;color:var(--creme);letter-spacing:-.01em;display:flex;align-items:baseline;gap:.12em}
+.zahl b small{font-size:.34em;letter-spacing:.04em;color:var(--gold)}
+.zahl>span{font-size:15px;color:var(--leise);max-width:24ch}
+.zahl b span{font:inherit;color:inherit;max-width:none}
+/* Zeilen: eine Tafel aus Zeilen, nicht aus Zellen */
+.zeilen{display:grid;border-top:1px solid var(--linie)}
+.zeilen>div{display:grid;grid-template-columns:var(--sp,minmax(0,1fr) minmax(0,2fr));gap:12px 24px;padding:16px 0;border-bottom:1px solid var(--linie);font-size:15.5px;color:var(--leise)}
+.zeilen>div.k{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding:10px 0}
+.zeilen>div>span:first-child{color:var(--fg)}
+.zeilen .ja{color:var(--gold);font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;white-space:nowrap}
+.zeilen .of{color:var(--offen);font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;white-space:nowrap}
+.zeilen .vs{color:var(--taupe);font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;white-space:nowrap}
+.zeilen .wer{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--taupe)}
+.zeilen .nr{font-family:var(--titel);font-weight:700;font-size:clamp(1.8rem,2.6vw,2.6rem);line-height:1;color:var(--creme)}
+/* Atelier: gebaute Häuser */
+.atelier{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:16px}
+.atelier a{display:grid;gap:0;color:inherit;text-decoration:none;padding:0}
+.atelier a:hover{text-decoration:none}
+.atelier .bild{position:relative;overflow:hidden;border-radius:var(--r-l) var(--r-l) 0 0;aspect-ratio:16/10;background:#0d0f19}
+.atelier .bild img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.atelier .n{display:grid;gap:4px;padding:18px 22px 20px}
+.atelier .n b{font-family:var(--titel);font-weight:600;font-size:1.25rem;letter-spacing:.03em;text-transform:uppercase;color:#fff}
+.atelier .n span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--gold)}
+.links{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.links li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:12px 0;border-bottom:1px solid var(--linie);font-size:15px;color:var(--leise)}
+.links li a{font-family:var(--mono);font-size:12px;letter-spacing:.06em;overflow-wrap:anywhere;text-align:right}
+/* geteilt: Text links, hohes Bild rechts */
+.geteilt{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,4vw,72px);align-items:start}
+.geteilt .bild{position:relative;overflow:hidden;border-radius:var(--r-xl);aspect-ratio:3/4;background:#0d0f19;box-shadow:var(--platte-s)}
+.geteilt .bild img{width:100%;height:100%;object-fit:cover}
+.geteilt .bild .schild{position:absolute;left:22px;bottom:20px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--creme);text-shadow:0 1px 2px rgba(3,10,16,.9)}
+.geteilt .bild--quer{aspect-ratio:4/3}
+.geteilt .bild--klebt{position:sticky;top:84px}
+/* So / Nie */
+.paar{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}
+.paar .platte p{font-size:clamp(1rem,1.1vw,1.1rem);color:var(--fg)}
+.paar .nie p{color:var(--leise);text-decoration:line-through;text-decoration-color:var(--offen);text-decoration-thickness:1px}
+/* Schriftproben */
+.proben{display:grid;border-top:1px solid var(--linie)}
+.proben>div{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,.8fr) 60px;gap:12px 24px;align-items:center;padding:18px 0;border-bottom:1px solid var(--linie);font-size:15px;color:var(--leise)}
+.proben>div.k{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding:10px 0}
+.proben .s{font-size:clamp(1.6rem,2.4vw,2.2rem);line-height:1.1;color:#fff}
+.proben .s.antonio{font-family:var(--titel);font-weight:700;text-transform:uppercase;letter-spacing:.02em}
+.proben .s.instrument{font-family:var(--sans);font-weight:400}
+.proben .s.dmmono{font-family:var(--mono);font-size:1.5rem}
+.proben .s.cormorant{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400}
+.proben .s.montserrat{font-family:'Montserrat',var(--sans);font-weight:400}
+.proben .null{font-family:var(--mono);color:var(--gold);text-align:right}
+/* Fahrplan */
+.fahrplan{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:clamp(20px,2.6vw,40px);padding-top:28px}
+.fahrplan::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:var(--gold);opacity:.7}
+.fahrplan .ph{display:grid;gap:14px;align-content:start}
+.fahrplan .ph::before{content:'';width:7px;height:7px;background:var(--gold);margin-top:-32px;margin-bottom:12px}
+.fahrplan .ph b{font-family:var(--titel);font-weight:700;font-size:clamp(1.4rem,2vw,1.9rem);letter-spacing:.03em;text-transform:uppercase;color:#fff;line-height:1.1}
+.fahrplan .ph p{font-size:15px;color:var(--leise);line-height:1.6}
+/* Rollen, Hälften */
+.haelften{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}
+.haelften .platte{text-align:center;padding:clamp(30px,3.4vw,48px) 24px;gap:6px}
+.haelften .platte b{font-family:var(--titel);font-weight:700;font-size:clamp(4rem,8vw,8rem);line-height:.9;color:var(--creme)}
+.haelften .platte span{font-family:var(--titel);font-weight:600;font-size:clamp(1.3rem,1.8vw,1.7rem);letter-spacing:.05em;text-transform:uppercase;color:#fff}
+.haelften .platte small{color:var(--taupe)}
+.rollen .platte h3{font-size:clamp(1.9rem,2.8vw,2.6rem)}
+.fluss{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;position:relative}
+.fluss .platte{text-align:center;gap:8px;padding:clamp(26px,2.8vw,36px) 22px}
+.fluss .platte b{font-family:var(--titel);font-weight:600;font-size:clamp(1.3rem,1.8vw,1.7rem);letter-spacing:.04em;text-transform:uppercase;color:#fff;line-height:1.15}
+.fluss .platte span{font-size:14.5px;color:var(--leise)}
+.fluss .platte small{color:var(--taupe)}
+.werkzeuge>div{grid-template-columns:52px minmax(0,220px) minmax(0,1fr)}
+.werkzeuge .n{font-family:var(--titel);font-weight:600;font-size:1.3rem;letter-spacing:.03em;text-transform:uppercase;color:#fff}
+.formen .platte dl{margin:0;display:grid;gap:10px}
+.formen .platte dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe)}
+.formen .platte dd{margin:0 0 6px;font-size:15px;color:var(--leise);line-height:1.55}
+.formen .platte h3{font-size:clamp(1.6rem,2.2vw,2.1rem)}
+/* Schluss */
+.schluss{position:relative;overflow:clip;min-height:70svh;display:grid;align-items:end;isolation:isolate;color:#fff}
+.schluss img{position:absolute;inset:0;z-index:-1;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.schluss::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(17,20,33,.1) 0%,rgba(17,20,33,.88) 70%,var(--nacht) 100%)}
+.schluss .in{padding:clamp(120px,18vh,220px) var(--rand) clamp(36px,4vw,60px);display:grid;gap:18px;width:100%}
+.schluss .d2{color:#fff;max-width:14em}
+.schluss p{max-width:52ch;color:var(--creme);font-size:15.5px}
+.schluss .fuss{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;padding-top:28px;margin-top:20px;border-top:1px solid var(--linie);font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe)}
+.schluss .fuss a{color:var(--taupe)}
+/* Zwei Teile */
+.teile{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.teile .platte{gap:18px;padding:clamp(26px,3vw,40px)}
+.teile .platte h3{font-size:clamp(2rem,3.2vw,3rem)}
+.teile ol{margin:0;padding:0;list-style:none;display:grid;gap:0;counter-reset:t}
+.teile ol li{counter-increment:t;display:grid;grid-template-columns:36px minmax(0,1fr);gap:10px;padding:9px 0;border-top:1px solid var(--linie);font-size:15px}
+.teile ol li::before{content:counter(t,decimal-leading-zero);font-family:var(--mono);font-size:11px;color:var(--gold);padding-top:4px}
+.teile ol li a{color:var(--leise)}
+.teile ol li a:hover{color:var(--gold);text-decoration:none}
+.teile ol.zwei-start{counter-reset:t 10}
+
+@media (max-width:980px){
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero__b{order:-1;min-height:56svh;margin-top:64px}
+  .hero__b::after{display:none}
+  .hero__t{padding-top:clamp(40px,6vh,70px)}
+  .kopf{grid-template-columns:minmax(0,1fr)}
+  .geteilt{grid-template-columns:minmax(0,1fr)}
+  .geteilt .bild{aspect-ratio:4/3}
+  .geteilt .bild--klebt{position:relative;top:auto}
+  .leiste .mitte{display:none}
+}
+@media (max-width:720px){
+  .zeilen>div{grid-template-columns:minmax(0,1fr)!important;gap:6px}
+  .zeilen>div.k{display:none}
+  .zeilen>div>span[data-l]::before{content:attr(data-l);display:block;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe);margin-bottom:2px}
+  .werkzeuge>div{grid-template-columns:40px minmax(0,1fr)!important}
+  .werkzeuge>div>span:last-child{grid-column:2}
+  .proben>div{grid-template-columns:minmax(0,1fr) auto auto;gap:6px 16px}
+  .proben>div.k{display:none}
+  .proben .s{grid-column:1/-1}
+  .proben .null{text-align:left}
+  .leiste{height:58px;gap:12px}
+  .leiste .marke{font-size:15px;white-space:nowrap}
+  .leiste nav a{font-size:10px;letter-spacing:.14em;white-space:nowrap}
+  .leiste nav a span{display:none}
+  .fortschritt{top:57px}
+  .links li{grid-template-columns:minmax(0,1fr)}
+  .links li a{text-align:left}
+  .leiste nav{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  .js [data-r],.js [data-r="bild"],.js [data-r="edel"],.js [data-r="schweb"],.js [data-r="staffel"]{opacity:1;transform:none;transition:none}
+  .js [data-r] img,.hero__b img{transform:none;transition:none}
+  .z>span{transform:none;transition:none}
+  .kap i,.linie-zieht{transform:none;transition:none}
+  .platte,.platte::after,.kn,.kn::after{transition:none}
+}
+.teile--vier{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"t1 t2" "t3 t2" "t4 t4"}
+.teile--vier>.platte:nth-child(1){grid-area:t1}.teile--vier>.platte:nth-child(2){grid-area:t2}.teile--vier>.platte:nth-child(3){grid-area:t3}.teile--vier>.platte:nth-child(4){grid-area:t4}
+.teile--vier>.platte:nth-child(4) ol{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:clamp(20px,2.4vw,36px)}
+@media (max-width:860px){.teile--vier{grid-template-columns:minmax(0,1fr);grid-template-areas:"t1" "t2" "t3" "t4"}.teile--vier>.platte:nth-child(2) ol{grid-auto-rows:auto}.teile--vier>.platte:nth-child(4) ol{grid-template-columns:minmax(0,1fr)}}
+.teile__satz{margin:-4px 0 4px;max-width:36em;color:var(--leise);font-size:15px;line-height:1.55}
+.teile--vier>.platte:nth-child(2){grid-template-rows:auto auto auto 1fr}.teile--vier>.platte:nth-child(2) ol{grid-auto-rows:1fr}.teile--vier>.platte:nth-child(2) ol li{align-items:center}.teile--vier>.platte:nth-child(2) ol li::before{padding-top:0}
+.teilkopf+.kapitel{padding-top:clamp(28px,3vw,48px)}
+.teile--vier .platte h3{font-size:clamp(1.8rem,2.6vw,2.6rem);overflow-wrap:anywhere}
+.leiste .marke{white-space:nowrap}
+@media (max-width:1600px){.leiste .mitte{display:none}}
+.teilkopf{padding-top:clamp(56px,6vw,96px);padding-bottom:clamp(40px,4vw,64px);border-top:1px solid var(--linie)}
+.teilkopf .in{display:grid;gap:14px;justify-items:start}
+.teilkopf .unter{max-width:40em;color:var(--leise);font-size:clamp(1rem,1.15vw,1.15rem);line-height:1.6;margin:0}
+
+/* ---------- Briefing Ludwig ---------- */
+.atelier--drei{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
+.fragen>div{grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr)}
+.fragen>div>span:first-child{font-family:var(--titel);font-weight:600;font-size:clamp(1.1rem,1.4vw,1.35rem);letter-spacing:.02em;text-transform:uppercase;color:#fff;line-height:1.2}
+.preise .betrag{font-family:var(--titel);font-weight:700;font-size:clamp(1.3rem,1.8vw,1.7rem);color:var(--creme);letter-spacing:.02em;white-space:nowrap}
+.rollen3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.rollen3 .platte h3{font-size:clamp(1.9rem,2.8vw,2.6rem)}
+.rollen3 .liste li{font-size:15.5px}
+.teile--zwei{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:860px){.teile--zwei{grid-template-columns:minmax(0,1fr)}}
+.teile--zwei .platte{grid-template-rows:auto auto auto 1fr}.teile--zwei .platte ol{grid-auto-rows:1fr}.teile--zwei .platte ol li{align-items:center}.teile--zwei .platte ol li::before{padding-top:0}
+.teile--zwei .platte h3{font-size:clamp(1.8rem,2.6vw,2.6rem)}
+.kapitel .kopf{grid-template-columns:minmax(0,1fr);gap:clamp(16px,1.8vw,24px);align-items:start}
+.kapitel .kopf__r{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:end;gap:clamp(20px,3vw,56px)}
+@media (max-width:980px){.kapitel .kopf__r{grid-template-columns:minmax(0,1fr)}}
+.z{padding:.32em .1em .28em;margin:-.32em -.1em -.28em}
+.leiste nav a,.leiste .mitte,.rail a,.hero__meta,.hero__b .schild,.geteilt .bild .schild,.platte small,.quelle,.durchblick .quelle,.leitsatz .quelle,.kasten .mark,.marke,.mono,.zeilen>div.k,.zeilen .wer,.zeilen .ja,.zeilen .of,.zeilen .vs,.links li a,.atelier .n span,.kn,.schluss .fuss{font-size:13px}
+.leiste nav a,.kn,.hero__meta,.kasten .mark,.platte small{letter-spacing:.12em}
+@media (max-width:720px){.zeilen>div>span[data-l]::before{font-size:13px}.leiste nav{gap:12px}.leiste .marke{font-size:15px}}
+
+/* Runde Ecken: jeder Abschnitt legt sich mit runden oberen Ecken über den vorigen, Fenster bleiben oben gerade */
+:root{--ecke:clamp(22px,2.6vw,40px)}
+main>:is(section,div)+section:not(.durchblick){margin-top:calc(-1*var(--ecke));border-radius:var(--ecke) var(--ecke) 0 0;box-shadow:0 -26px 50px -30px rgba(0,0,0,.6)}
+main>*{position:relative}
+
+/* Laufband: schmal und fein, Schrift in der sichtbaren Mitte */
+.band{position:relative;overflow:hidden;background:var(--tief);padding:15px 0 calc(15px + var(--ecke));border-top:1px solid var(--linie)}
+.band__spur{display:flex;width:max-content;animation:band 70s linear infinite}
+.band__spur span{flex:none;display:inline-flex;align-items:center;gap:26px;padding-right:26px;font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe);line-height:1;white-space:nowrap}
+.band__spur span i{width:5px;height:5px;border-radius:50%;background:var(--gold);opacity:.8}
+@keyframes band{to{transform:translateX(-50%)}}
+
+/* Laptop-Rahmen der Agentur-Seite */
+.lap{position:relative;isolation:isolate}
+.lap::before{content:'';position:absolute;z-index:0;left:4%;right:4%;bottom:-3%;height:16%;background:radial-gradient(50% 50% at 50% 50%,rgba(0,0,0,.6),rgba(0,0,0,0) 72%)}
+.lo{position:relative;z-index:1;width:100%}
+.lo-schirm{position:absolute;z-index:1;left:var(--sx);top:var(--sy);width:var(--sw);height:var(--sh);overflow:hidden;background:#0b0e14}
+.lo-schirm img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:0 0}
+.lo-rahmen{position:relative;z-index:2;display:block;width:100%;height:auto;pointer-events:none}
+.lap-klebt{position:sticky;top:96px}
+.lap-unter{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:clamp(18px,2vw,28px)}
+
+/* Werkzeug-Wähler: links die sieben, rechts ein Laptop */
+.wz{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(28px,4vw,64px);align-items:start}
+.wz-liste{display:grid;gap:6px}
+.wz-k{appearance:none;border:0;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer;display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;align-items:start;padding:15px 20px;border-radius:18px;transition:background-color .5s var(--e2),box-shadow .5s var(--e2),transform .6s var(--e2)}
+.wz-k .nr{font-family:var(--mono);font-size:13px;letter-spacing:.08em;color:var(--taupe);padding-top:5px}
+.wz-k b{display:block;font-family:var(--titel);font-weight:600;font-size:clamp(1.2rem,1.5vw,1.45rem);letter-spacing:.03em;text-transform:uppercase;color:var(--leise);line-height:1.2;transition:color .4s}
+.wz-k em{display:block;font-style:normal;font-size:15px;line-height:1.5;color:rgba(243,237,226,.56);margin-top:4px}
+.wz-k:hover b{color:#fff}
+.wz-k.an{background:var(--platte);box-shadow:var(--platte-s);transform:translateX(6px)}
+.wz-k.an b{color:#fff}.wz-k.an .nr{color:var(--gold)}.wz-k.an em{color:var(--leise)}
+.wz-k:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wz-buehne{position:sticky;top:96px;display:grid;gap:clamp(20px,2.2vw,30px)}
+.wz-s{opacity:0;transform:scale(1.03);transition:opacity .8s var(--e2),transform 1.6s var(--e1)}
+.wz-s.an{opacity:1;transform:none}
+.wz-tafel{display:grid;gap:14px;padding:clamp(20px,2.2vw,28px);border-radius:var(--r-l);background:var(--kuhle);box-shadow:var(--kuhle-s)}
+.wz-tafel small{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.wz-tafel p{font-size:15.5px;color:var(--leise)}
+.wz-tafel p b{font-weight:500;color:var(--fg)}
+.wz-zweit[hidden]{display:none}
+@media (max-width:980px){.wz{grid-template-columns:minmax(0,1fr)}.wz-buehne{position:relative;top:auto}.wz-liste>div:last-child{grid-column:1/-1}.wz-k em{display:none}.wz-liste{grid-template-columns:repeat(2,minmax(0,1fr))}.wz-k{padding:12px 14px;grid-template-columns:30px minmax(0,1fr);gap:8px}.wz-k.an{transform:none}}
+
+/* Reinzoomen und Gleiten im Rahmen */
+.js [data-r="bild"].da img,.js [data-r="edel"].da .bild img{transform:scale(1.04)}
+@supports (animation-timeline: view()){
+  .geteilt .bild,.atelier .bild{view-timeline:--gleit block}
+  .geteilt .bild img,.atelier .bild img{animation:gleit linear both;animation-timeline:--gleit;animation-range:cover 0% cover 100%}
+  @keyframes gleit{from{translate:0 2%}to{translate:0 -2%}}
+}
+
+@media (max-width:1600px){.rail{display:none!important}}
+/* Beteiligung */
+.beteil .zahl b{color:var(--creme)}
+@media (prefers-reduced-motion:reduce){.band__spur{animation:none}.wz-s,.wz-k{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="leiste" id="leiste">
+  <a class="marke" href="#oben"><img src="img/logo-tasty.png" alt="" width="26" height="26">Tasty Studios</a>
+  <span class="mitte">Ambassador-Briefing · Ludwig · Zürich · Stand 11.11.2026</span>
+  <nav><a href="#teil-1" data-teil="1">1<span> · Was wir verkaufen</span></a><a href="#teil-2" data-teil="2">2<span> · Wen du ansprichst</span></a><a href="#teil-3" data-teil="3">3<span> · Das Gespräch</span></a><a href="#teil-4" data-teil="4">4<span> · Du und wir</span></a></nav>
+</header>
+<div class="fortschritt" id="fortschritt"></div>
+<nav class="rail" id="rail" aria-label="Kapitel">
+  <a href="#k01" title="Wer wir sind">01</a><a href="#k02" title="Die Website">02</a><a href="#k03" title="Die Werkzeuge">03</a><a href="#k04" title="Die Werkbank">04</a><a href="#k05" title="Zum Zeigen">05</a><a class="t2" href="#k06" title="Kunden">06</a><a href="#k07" title="Einstieg">07</a><a href="#k08" title="Ablauf">08</a><a class="t2" href="#k09" title="Gespräch">09</a><a href="#k10" title="Preise">10</a><a href="#k11" title="Fragen">11</a><a href="#k12" title="Stimme">12</a><a href="#k13" title="Grenzen">13</a><a class="t2" href="#k14" title="Beteiligung">14</a><a href="#k15" title="Rollen">15</a><a href="#k16" title="Erste Schritte">16</a>
+</nav>
+
+<main>
+
+<!-- ============ Auftakt ============ -->
+<section class="hero" id="oben">
+  <div class="hero__t">
+    <div class="kap" data-r><i></i><span>Ambassador-Briefing · Ludwig · Zürich</span></div>
+    <h1 class="d1" data-r="titel"><span class="z"><span>Zürich.</span></span><span class="z"><span>Du öffnest</span></span><span class="z"><span><em>die Tür.</em></span></span></h1>
+    <p class="hero__sub" data-r style="--i:2">Dein Werkzeug für Zürich. Hier steht, was wir verkaufen, welche Häuser zu uns passen, wie ein Gespräch läuft, was es kostet und was du daran verdienst. Jede Website und jedes Werkzeug kannst du direkt aus diesem Papier öffnen und zeigen.</p>
+    <div class="kn-reihe" data-r style="--i:3"><a class="kn" href="#teil-1"><span>Das Produkt</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></i></a><a class="kn kn--zwei" href="#k14"><span>Deine Beteiligung</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></i></a></div>
+    <div class="hero__meta" data-r style="--i:4"><span>Stand <b>11.11.2026</b></span><span>Website <b>tastystudios.vercel.app</b></span><span>Ansprechpartner <b>Robert Reff</b></span></div>
+  </div>
+  <div class="hero__b">
+    <img src="img/k-empfang-1600.webp" srcset="img/k-empfang-900.webp 900w, img/k-empfang-1600.webp 1600w, img/k-empfang-2400.webp 2400w" sizes="(max-width:980px) 100vw, 48vw" width="2400" height="1340" alt="Ein Empfangstresen mit Messinglampe, dahinter der Hafen am Abend" decoding="sync" fetchpriority="high">
+    <span class="schild">Tasty Studios · Digital Hospitality</span>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="band__spur"><span><span>Grand Beau-Rivage<i></i></span><span>Carlton-Europe<i></i></span><span>Waldhotel Doldenhorn<i></i></span><span>Landgasthof Ruedihus<i></i></span><span>Taverne zum Schäfli<i></i></span><span>Wirtschaft am Schlössli<i></i></span><span>Culinarium<i></i></span><span>Walk on the Wild Side<i></i></span><span>Salt &amp; Silver<i></i></span></span><span><span>Grand Beau-Rivage<i></i></span><span>Carlton-Europe<i></i></span><span>Waldhotel Doldenhorn<i></i></span><span>Landgasthof Ruedihus<i></i></span><span>Taverne zum Schäfli<i></i></span><span>Wirtschaft am Schlössli<i></i></span><span>Culinarium<i></i></span><span>Walk on the Wild Side<i></i></span><span>Salt &amp; Silver<i></i></span></span></div></div>
+
+<!-- ============ Überblick ============ -->
+<section class="fl fl--navy" id="teile">
+  <div class="in" style="display:grid;gap:clamp(36px,4vw,60px)">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>Überblick</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Vier Teile.</span></span><span class="z"><span>Sechzehn Kapitel.</span></span></h2></div>
+    </div>
+    <div class="teile teile--zwei">
+      <div class="platte" data-r="edel" style="--i:0"><small>Teil 1 · Das Produkt</small><h3>Was wir verkaufen</h3><p class="teile__satz">Wer wir sind, was ein Haus bekommt und alles, was du zeigen kannst.</p>
+        <ol><li><a href="#k01">Wer wir sind · Ein Partner statt sechs</a></li><li><a href="#k02">Die Website · Aus der Welt des Hauses</a></li><li><a href="#k03">Die Werkzeuge · Sieben, live zum Anklicken</a></li><li><a href="#k04">Die Werkbank · Alles an einem Ort</a></li><li><a href="#k05">Zum Zeigen · Die gebauten Häuser</a></li></ol></div>
+      <div class="platte" data-r="edel" style="--i:1"><small>Teil 2 · Die Häuser</small><h3>Wen du ansprichst</h3><p class="teile__satz">Welche Häuser in Zürich passen, wie du ins Gespräch kommst und wie ein Haus bis zur Wartung findet.</p>
+        <ol style="counter-reset:t 5"><li><a href="#k06">Kunden · Welche Häuser passen</a></li><li><a href="#k07">Einstieg · Was die KI über ein Haus sagt</a></li><li><a href="#k08">Ablauf · Vom Namen bis zur Wartung</a></li></ol></div>
+      <div class="platte" data-r="edel" style="--i:2"><small>Teil 3 · Vor Ort</small><h3>Das Gespräch</h3><p class="teile__satz">Wie ein Termin läuft, was es kostet, was gefragt wird, wie wir klingen und was du nie zusagst.</p>
+        <ol style="counter-reset:t 8"><li><a href="#k09">Gespräch · In fünf Schritten</a></li><li><a href="#k10">Preise · Wartung, Website, Werkzeuge</a></li><li><a href="#k11">Fragen · Was gefragt wird</a></li><li><a href="#k12">Stimme · Wie wir klingen</a></li><li><a href="#k13">Grenzen · Was du nie zusagst</a></li></ol></div>
+      <div class="platte" data-r="edel" style="--i:3"><small>Teil 4 · Du und wir</small><h3>Wie wir zusammenarbeiten</h3><p class="teile__satz">Was du verdienst, wer was übernimmt und womit du anfängst.</p>
+        <ol style="counter-reset:t 13"><li><a href="#k14">Beteiligung · Was du verdienst</a></li><li><a href="#k15">Rollen · Wer was übernimmt</a></li><li><a href="#k16">Erste Schritte · Womit du anfängst</a></li></ol></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Teil 1 · Fenster ============ -->
+<section class="durchblick durchblick--hoch" id="teil-1" style="--pos:50% 50%">
+  <div class="durchblick__h"><div class="durchblick__b"><img src="img/fen-lobby-1400.webp" srcset="img/fen-lobby-900.webp 900w, img/fen-lobby-1400.webp 1400w, img/fen-lobby-2000.webp 2000w" sizes="100vw" width="2000" height="1116" alt="Eine Lobby in einem alten Speicher, Sessel vor hohen Fenstern" loading="lazy" decoding="async"></div>
+  <div class="durchblick__t"><div><div class="kap"><i></i><span>Teil 1</span></div><h2 class="d2" data-r="titel"><span class="z"><span>Was wir verkaufen.</span></span></h2><span class="unter">Website, sieben Werkzeuge und die Werkbank. Alles, was du hier liest, kannst du anklicken.</span></div></div></div>
+</section>
+
+<!-- ============ 01 Wer wir sind ============ -->
+<section class="kapitel fl--nacht" id="k01">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>01 · Wer wir sind</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Ein Partner</span></span><span class="z"><span>statt sechs.</span></span></h2><div class="lauf" data-r><p>Tasty Studios baut für unabhängige Hotels und Restaurants die Website und das System dahinter: Marke, Website, Werkzeuge für das Team, Karten und Unterlagen, KI. Die Website ist der Teil, den der Gast sieht. Dahinter steht ein ganzes System für Gast und Betrieb, aus einem Guss und im Stil des Hauses.</p></div></div>
+    </div>
+    <div class="geteilt">
+      <div class="block">
+        <div class="leitsatz" data-r><p class="d3">Tasty Studios is a Digital Hospitality Studio.</p><span class="quelle">Robert, 10.10.2026</span></div>
+        <div class="platten" style="grid-template-columns:minmax(0,1fr)" data-gruppe>
+          <div class="platte" data-r="edel" style="--i:0"><small>Was uns unterscheidet</small><h3>Aus einer Hand</h3><p>Was ein Haus sonst bei Webagentur, Grafikbüro, SEO-Agentur und weiteren Firmen einkauft, entsteht bei uns an einem Ort und passt zusammen.</p></div>
+          <div class="platte" data-r="edel" style="--i:1"><small>Woher wir kommen</small><h3>Aus dem Betrieb</h3><p>Robert kommt aus Gastronomie, Expansion und Systembau, zuletzt Expansionsmanager bei der New York Bagel Bar. Anna Llorens aus Front Office, Event, F&amp;B und Hoteldirektion. Wir kennen den vollen Abend von innen.</p></div>
+          <div class="platte" data-r="edel" style="--i:2"><small>Jedes Haus anders</small><h3>Kein Baukasten</h3><p>Jeder Auftritt entsteht aus der Welt des einen Hauses. Bei der Familie Maeder sind es vier Häuser und vier völlig verschiedene Websites, die man trotzdem als eine Familie erkennt.</p></div>
+        </div>
+      </div>
+      <div class="bild bild--klebt" data-r="bild"><img src="img/k-studio-1600.webp" srcset="img/k-studio-900.webp 900w, img/k-studio-1600.webp 1600w, img/k-studio-2400.webp 2400w" sizes="(max-width:980px) 100vw, 40vw" width="2400" height="1340" alt="Ein Arbeitsplatz im Studio, Lampe und Bildschirm vor dem Hafen" loading="lazy" decoding="async"><span class="schild">Das Studio · Hamburg</span></div>
+    </div>
+    <div class="lauf" data-r><p>Daneben gibt es das Backoffice, ein Betriebssystem in Notion für die Küche und den Betrieb, und die Masterclass, in der Betriebe lernen, mit KI zu arbeiten. Beides ist der Beleg, dass wir Gastronomie von innen kennen. In Zürich verkaufst du Website und Werkzeuge.</p></div>
+  </div>
+</section>
+
+<!-- ============ 02 Die Website ============ -->
+<section class="kapitel fl--navy" id="k02">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>02 · Die Website</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Aus der Welt</span></span><span class="z"><span>des Hauses.</span></span></h2><div class="lauf" data-r><p>Die Website ist der Teil, den der Gast sieht. Sie entsteht für jedes Haus neu, aus seiner Geschichte, seinen Bildern und seiner Schrift.</p></div></div>
+    </div>
+    <div class="zahlen" data-gruppe>
+      <div class="zahl" data-r style="--i:0"><b><span data-zahl="2">2</span><small>Tage</small></b><span>So lange braucht Robert, um den Auftritt eines Hauses vorzubauen.</span></div>
+      <div class="zahl" data-r style="--i:1"><b><span data-zahl="7">7</span><small>Werkzeuge</small></b><span>Mit ihnen hat das Haus alles selbst in der Hand, ohne eine Zeile Code.</span></div>
+      <div class="zahl" data-r style="--i:2"><b><span data-zahl="4">4</span><small>Websites</small></b><span>Für die vier Häuser der Familie Maeder, jede in ihrem eigenen Stil.</span></div>
+      <div class="zahl" data-r style="--i:3"><b><span data-zahl="1">1</span><small>Partner</small></b><span>Für Website, Werkzeuge, Drucksachen und KI.</span></div>
+    </div>
+    <div class="geteilt">
+      <div class="block">
+        <ul class="liste" data-r>
+          <li><b>Gestaltet aus der Welt des Hauses.</b> Schrift aus der Wortmarke, die echten Bilder des Hauses, eine eigene Geschichte von oben bis unten.</li>
+          <li><b>Mit der Buchung verbunden.</b> Das Buchungssystem des Hauses bleibt, die Website führt dorthin.</li>
+          <li><b>Lesbar für Gäste und für KI.</b> Die Angaben zum Haus stehen so auf der Seite, dass Google und ChatGPT sie richtig lesen.</li>
+          <li><b>Mit Gäste-Chat.</b> Auf der Website beantwortet ein KI-Gastgeber die Fragen der Gäste, das Team sieht jede Anfrage.</li>
+          <li><b>In mehreren Sprachen.</b> Das Carlton-Europe zum Beispiel auf Deutsch, Englisch und Französisch.</li>
+          <li><b>Schnell auf jedem Gerät.</b> Alle Bilder und die Schrift sind beim ersten Blick da, auch auf einem älteren Handy.</li>
+        </ul>
+        <div class="kn-reihe" data-r><a class="kn " href="https://carlton.tastystudios.ch/" target="_blank" rel="noopener" ><span>Website öffnen</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></i></a><a class="kn kn--zwei " href="https://carlton.tastystudios.ch/rezeption/" target="_blank" rel="noopener" ><span>Gäste-Chat ansehen</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></i></a></div>
+      </div>
+      <div class="lap lap-klebt" data-r="schweb"><div class="lo" style="aspect-ratio:2967/2078;--sx:11.763%;--sy:5.679%;--sw:76.508%;--sh:70.548%"><div class="lo-schirm"><img src="geraet/schirm/startseite-1600.webp" srcset="geraet/schirm/startseite-1600.webp 1600w, geraet/schirm/startseite-2880.webp 2880w" sizes="(max-width:980px) 70vw, 42vw" width="2880" height="1860" alt="Die Startseite des Carlton-Europe Interlaken" loading="lazy" decoding="async"></div><img class="lo-rahmen" src="geraet/g-lap-loch-1000.webp" srcset="geraet/g-lap-loch-1000.webp 1000w, geraet/g-lap-loch-1800.webp 1800w" sizes="(max-width:980px) 90vw, 50vw" width="1800" height="1261" alt="" loading="lazy" decoding="async"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 Die Werkzeuge ============ -->
+<section class="kapitel fl--nacht" id="k03">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>03 · Die Werkzeuge</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Sieben Werkzeuge,</span></span><span class="z"><span>live zum Anklicken.</span></span></h2><div class="lauf" data-r><p>Mit den Werkzeugen hält das Haus seinen Auftritt selbst aktuell. Es bekommt sie nur im Abo mit der monatlichen Wartung. Klick links ein Werkzeug an, rechts siehst du es. Mit dem Knopf öffnest du die echte Demo im Carlton-Europe und kannst sie im Gespräch bedienen.</p></div></div>
+    </div>
+    <div class="wz">
+      <div class="wz-liste" role="tablist" aria-label="Die sieben Werkzeuge" data-gruppe>
+        <div data-r="staffel" style="--i:0"><button class="wz-k an" type="button" role="tab" aria-selected="true" data-url="https://carlton.tastystudios.ch/maison/" data-titel="Kontrollpanel" data-text="Im Carlton-Europe heisst es «La Maison». In jedem neuen Haus trägt es den Namen «Kontrollpanel»." data-zweit=""><span class="nr">01</span><span><b>Kontrollpanel</b><em>Die Zentrale. Führt zu allen Werkzeugen und zeigt ihren Stand auf einen Blick.</em></span></button></div><div data-r="staffel" style="--i:1"><button class="wz-k" type="button" role="tab" aria-selected="false" data-url="https://carlton.tastystudios.ch/control/" data-titel="Website bearbeiten" data-text="Im Carlton-Europe heisst es «Le Bureau». In jedem neuen Haus trägt es den Namen «Website bearbeiten»." data-zweit=""><span class="nr">02</span><span><b>Website bearbeiten</b><em>Texte, Fotos, Öffnungszeiten, Preise, Google-Texte und Sprachen selbst pflegen, ohne eine Zeile Code.</em></span></button></div><div data-r="staffel" style="--i:2"><button class="wz-k" type="button" role="tab" aria-selected="false" data-url="https://carlton.tastystudios.ch/_werkzeuge/carte/" data-titel="Karten &amp; Preislisten" data-text="Im Carlton-Europe heisst es «La Carte». In jedem neuen Haus trägt es den Namen «Karten &amp; Preislisten»." data-zweit=""><span class="nr">03</span><span><b>Karten &amp; Preislisten</b><em>Speise-, Bar- und Weinkarten pflegen. Die Karte auf der Website und das druckfertige PDF entstehen daraus von selbst.</em></span></button></div><div data-r="staffel" style="--i:3"><button class="wz-k" type="button" role="tab" aria-selected="false" data-url="https://carlton.tastystudios.ch/werkzeuge/reception/" data-titel="Anfragen &amp; Chat" data-text="Im Carlton-Europe heisst es «La Réception». In jedem neuen Haus trägt es den Namen «Anfragen &amp; Chat»." data-zweit="https://carlton.tastystudios.ch/rezeption/"><span class="nr">04</span><span><b>Anfragen &amp; Chat</b><em>Ein KI-Gastgeber im Chat der Website antwortet Gästen direkt. Das Team sieht jede Anfrage mit Antwortentwurf und pflegt das Wissen dahinter.</em></span></button></div><div data-r="staffel" style="--i:4"><button class="wz-k" type="button" role="tab" aria-selected="false" data-url="https://carlton.tastystudios.ch/werkzeuge/livre/" data-titel="Markenbuch" data-text="Im Carlton-Europe heisst es «Le Livre». In jedem neuen Haus trägt es den Namen «Markenbuch»." data-zweit=""><span class="nr">05</span><span><b>Markenbuch</b><em>Bildarchiv, Logo und Dateien, das Markenbuch des Hauses und eine Prüfung, ob alles im Hausstil ist.</em></span></button></div><div data-r="staffel" style="--i:5"><button class="wz-k" type="button" role="tab" aria-selected="false" data-url="https://carlton.tastystudios.ch/werkzeuge/registre/" data-titel="Besucher" data-text="Im Carlton-Europe heisst es «Le Registre». In jedem neuen Haus trägt es den Namen «Besucher»." data-zweit=""><span class="nr">06</span><span><b>Besucher</b><em>Wer die Website besucht, von wo, mit welchem Gerät und wer auf «Buchen» klickt. Ohne Cookies.</em></span></button></div><div data-r="staffel" style="--i:6"><button class="wz-k" type="button" role="tab" aria-selected="false" data-url="https://carlton.tastystudios.ch/werkzeuge/imprimerie/" data-titel="Drucksachen &amp; Feed" data-text="Im Carlton-Europe heisst es «L’Imprimerie». In jedem neuen Haus trägt es den Namen «Drucksachen &amp; Feed»." data-zweit=""><span class="nr">07</span><span><b>Drucksachen &amp; Feed</b><em>In einem Satz sagen, was man braucht. Die KI entwirft im Hausstil, danach bearbeitet man es wie in Canva und speichert es druckfertig.</em></span></button></div>
+      </div>
+      <div class="wz-buehne">
+        <div class="lap" data-r="schweb"><div class="lo" style="aspect-ratio:2967/2078;--sx:11.763%;--sy:5.679%;--sw:76.508%;--sh:70.548%"><div class="lo-schirm"><img class="wz-s an" src="geraet/schirm/kontrollpanel-1600.webp" srcset="geraet/schirm/kontrollpanel-1600.webp 1600w, geraet/schirm/kontrollpanel-2880.webp 2880w" sizes="(max-width:980px) 70vw, 42vw" width="2880" height="1860" alt="Das Werkzeug Kontrollpanel im Carlton-Europe" loading="lazy" decoding="async"><img class="wz-s" src="geraet/schirm/website-1600.webp" srcset="geraet/schirm/website-1600.webp 1600w, geraet/schirm/website-2880.webp 2880w" sizes="(max-width:980px) 70vw, 42vw" width="2880" height="1860" alt="Das Werkzeug Website bearbeiten im Carlton-Europe" loading="lazy" decoding="async"><img class="wz-s" src="geraet/schirm/karten-1600.webp" srcset="geraet/schirm/karten-1600.webp 1600w, geraet/schirm/karten-2880.webp 2880w" sizes="(max-width:980px) 70vw, 42vw" width="2880" height="1860" alt="Das Werkzeug Karten & Preislisten im Carlton-Europe" loading="lazy" decoding="async"><img class="wz-s" src="geraet/schirm/anfragen-1600.webp" srcset="geraet/schirm/anfragen-1600.webp 1600w, geraet/schirm/anfragen-2880.webp 2880w" sizes="(max-width:980px) 70vw, 42vw" width="2880" height="1860" alt="Das Werkzeug Anfragen & Chat im Carlton-Europe" loading="lazy" decoding="async"><img class="wz-s" src="geraet/schirm/markenbuch-1600.webp" srcset="geraet/schirm/markenbuch-1600.webp 1600w, geraet/schirm/markenbuch-2880.webp 2880w" sizes="(max-width:980px) 70vw, 42vw" width="2880" height="1860" alt="Das Werkzeug Markenbuch im Carlton-Europe" loading="lazy" decoding="async"><img class="wz-s" src="geraet/schirm/besucher-1600.webp" srcset="geraet/schirm/besucher-1600.webp 1600w, geraet/schirm/besucher-2880.webp 2880w" sizes="(max-width:980px) 70vw, 42vw" width="2880" height="1860" alt="Das Werkzeug Besucher im Carlton-Europe" loading="lazy" decoding="async"><img class="wz-s" src="geraet/schirm/drucksachen-1600.webp" srcset="geraet/schirm/drucksachen-1600.webp 1600w, geraet/schirm/drucksachen-2880.webp 2880w" sizes="(max-width:980px) 70vw, 42vw" width="2880" height="1860" alt="Das Werkzeug Drucksachen & Feed im Carlton-Europe" loading="lazy" decoding="async"></div><img class="lo-rahmen" src="geraet/g-lap-loch-1000.webp" srcset="geraet/g-lap-loch-1000.webp 1000w, geraet/g-lap-loch-1800.webp 1800w" sizes="(max-width:980px) 90vw, 50vw" width="1800" height="1261" alt="" loading="lazy" decoding="async"></div></div>
+        <div class="wz-tafel" data-r>
+          <small>Live ansehen · <span class="wz-name">Kontrollpanel</span></small>
+          <p class="wz-text">Im Carlton-Europe heisst es «La Maison». In jedem neuen Haus trägt es den Namen «Kontrollpanel».</p>
+          <div class="kn-reihe"><a class="kn wz-auf" href="https://carlton.tastystudios.ch/maison/" target="_blank" rel="noopener" ><span>Werkzeug öffnen</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></i></a><a class="kn kn--zwei wz-zweit" href="https://carlton.tastystudios.ch/rezeption/" target="_blank" rel="noopener" hidden><span>Gäste-Chat ansehen</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></i></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="zwei">
+      <div class="kasten vs" data-r><span class="mark">Gleiche Namen überall</span><p>In jedem neuen Haus heissen die Werkzeuge gleich. Meldet sich ein Haus, weiss jeder bei uns sofort, welches Werkzeug gemeint ist. Die Demos im Carlton tragen noch die Namen aus der Welt des Hauses.</p></div>
+      <div class="kasten vs" data-r><span class="mark">Für dich</span><p>Öffne vor dem ersten Termin jedes Werkzeug einmal selbst. Am stärksten im Gespräch: <b>Karten &amp; Preislisten</b>, weil das Haus sieht, wie eine Änderung sofort auf Website und Druck-PDF landet.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 Die Werkbank ============ -->
+<section class="kapitel fl--navy" id="k04">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>04 · Die Werkbank</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Alles an</span></span><span class="z"><span>einem Ort.</span></span></h2><div class="lauf" data-r><p>Auf der Werkbank findet der Betreiber alles, was wir für sein Haus gebaut haben: seine Unterlagen und Drucksachen im neuen Stil, Mails für Gäste, Kofferetiketten oder Sticker, eine Vorschau seines Instagram-Feeds und eine Potenzialanalyse seiner heutigen Website.</p></div></div>
+    </div>
+    <div class="geteilt">
+      <div class="block">
+        <div class="lauf" data-r><p>Für das Gespräch ist die Werkbank das stärkste Stück. Das Haus sieht, wie weit wir schon für es gedacht haben, bevor es einen Franken bezahlt hat.</p></div>
+        <ul class="links" data-r>
+          <li><span>Werkbank des Carlton-Europe</span><a href="https://carlton.tastystudios.ch/werkbank/" target="_blank" rel="noopener">carlton.tastystudios.ch/werkbank</a></li>
+          <li><span>Unterlagen im neuen Stil</span><a href="https://carlton.tastystudios.ch/unterlagen/" target="_blank" rel="noopener">carlton.tastystudios.ch/unterlagen</a></li>
+          <li><span>Drucksachen</span><a href="https://carlton.tastystudios.ch/drucksachen/" target="_blank" rel="noopener">carlton.tastystudios.ch/drucksachen</a></li>
+          <li><span>Instagram-Feed als Vorschau</span><a href="https://carlton.tastystudios.ch/feed/" target="_blank" rel="noopener">carlton.tastystudios.ch/feed</a></li>
+          <li><span>Kofferetiketten</span><a href="https://carlton.tastystudios.ch/kofferetiketten/" target="_blank" rel="noopener">carlton.tastystudios.ch/kofferetiketten</a></li>
+          <li><span>Material des Hauses</span><a href="https://carlton.tastystudios.ch/material/" target="_blank" rel="noopener">carlton.tastystudios.ch/material</a></li>
+          <li><span>Werkbank des Grand Beau-Rivage</span><a href="https://grand-beau-rivage-entwurf.vercel.app/werkbank/" target="_blank" rel="noopener">grand-beau-rivage-entwurf.vercel.app/werkbank</a></li>
+        </ul>
+        <div class="kn-reihe" data-r><a class="kn " href="https://carlton.tastystudios.ch/werkbank/" target="_blank" rel="noopener" ><span>Werkbank öffnen</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></i></a></div>
+      </div>
+      <div class="lap lap-klebt" data-r="schweb"><div class="lo" style="aspect-ratio:2967/2078;--sx:11.763%;--sy:5.679%;--sw:76.508%;--sh:70.548%"><div class="lo-schirm"><img src="geraet/schirm/werkbank-1600.webp" srcset="geraet/schirm/werkbank-1600.webp 1600w, geraet/schirm/werkbank-2880.webp 2880w" sizes="(max-width:980px) 70vw, 42vw" width="2880" height="1860" alt="Die Werkbank des Carlton-Europe: Für Ihr Haus entworfen" loading="lazy" decoding="async"></div><img class="lo-rahmen" src="geraet/g-lap-loch-1000.webp" srcset="geraet/g-lap-loch-1000.webp 1000w, geraet/g-lap-loch-1800.webp 1800w" sizes="(max-width:980px) 90vw, 50vw" width="1800" height="1261" alt="" loading="lazy" decoding="async"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 Zum Zeigen ============ -->
+<section class="kapitel fl--nacht" id="k05">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>05 · Zum Zeigen</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Die gebauten</span></span><span class="z"><span>Häuser.</span></span></h2><div class="lauf" data-r><p>Ein Haus muss sich nichts vorstellen. Es klickt den fertigen Auftritt an. Zeig zuerst ein Haus, das dem Gegenüber ähnelt: einem Hotel das Grand Beau-Rivage oder das Carlton, einem Landgasthof das Ruedihus, einem Restaurant mit Auszeichnung das Schäfli.</p></div></div>
+    </div>
+    <div class="block">
+      <div class="atelier atelier--drei" data-gruppe>
+        <a class="platte" data-r="edel" style="--i:0" href="https://grand-beau-rivage-entwurf.vercel.app" target="_blank" rel="noopener"><div class="bild"><img src="img/ar-gbr-o-1200.webp" srcset="img/ar-gbr-o-700.webp 700w, img/ar-gbr-o-1200.webp 1200w, img/ar-gbr-o-1800.webp 1800w" sizes="(max-width:720px) 100vw, 33vw" width="1800" height="1125" alt="Grand Beau-Rivage, Interlaken" loading="lazy" decoding="async"></div><div class="n"><b>Grand Beau-Rivage, Interlaken</b><span>grand-beau-rivage-entwurf.vercel.app</span></div></a>
+        <a class="platte" data-r="edel" style="--i:1" href="https://carlton.tastystudios.ch" target="_blank" rel="noopener"><div class="bild"><img src="img/ar-carlton-o-1200.webp" srcset="img/ar-carlton-o-700.webp 700w, img/ar-carlton-o-1200.webp 1200w, img/ar-carlton-o-1800.webp 1800w" sizes="(max-width:720px) 100vw, 33vw" width="1800" height="1125" alt="Carlton-Europe · Familie Maeder" loading="lazy" decoding="async"></div><div class="n"><b>Carlton-Europe · Familie Maeder</b><span>carlton.tastystudios.ch</span></div></a>
+        <a class="platte" data-r="edel" style="--i:2" href="https://doldenhorn.tastystudios.ch" target="_blank" rel="noopener"><div class="bild"><img src="img/ar-doldenhorn-o-1200.webp" srcset="img/ar-doldenhorn-o-700.webp 700w, img/ar-doldenhorn-o-1200.webp 1200w, img/ar-doldenhorn-o-1800.webp 1800w" sizes="(max-width:720px) 100vw, 33vw" width="1800" height="1125" alt="Waldhotel Doldenhorn · Familie Maeder" loading="lazy" decoding="async"></div><div class="n"><b>Waldhotel Doldenhorn · Familie Maeder</b><span>doldenhorn.tastystudios.ch</span></div></a>
+        <a class="platte" data-r="edel" style="--i:0" href="https://ruedihus.tastystudios.ch" target="_blank" rel="noopener"><div class="bild"><img src="img/ruedihus-1400.webp" srcset="img/ruedihus-600.webp 600w, img/ruedihus-900.webp 900w, img/ruedihus-1400.webp 1400w, img/ruedihus-2000.webp 2000w" sizes="(max-width:720px) 100vw, 33vw" width="2000" height="1250" alt="Landgasthof Ruedihus · Familie Maeder" loading="lazy" decoding="async"></div><div class="n"><b>Landgasthof Ruedihus · Familie Maeder</b><span>ruedihus.tastystudios.ch</span></div></a>
+        <a class="platte" data-r="edel" style="--i:1" href="https://maeder.tastystudios.ch" target="_blank" rel="noopener"><div class="bild"><img src="img/maeder-vier-1400.webp" srcset="img/maeder-vier-600.webp 600w, img/maeder-vier-900.webp 900w, img/maeder-vier-1400.webp 1400w, img/maeder-vier-2000.webp 2000w" sizes="(max-width:720px) 100vw, 33vw" width="2000" height="1250" alt="Familie Maeder · vier Häuser" loading="lazy" decoding="async"></div><div class="n"><b>Familie Maeder · vier Häuser</b><span>maeder.tastystudios.ch</span></div></a>
+        <a class="platte" data-r="edel" style="--i:2" href="https://schaefli.tastystudios.ch" target="_blank" rel="noopener"><div class="bild"><img src="img/ar-schaefli-o-1200.webp" srcset="img/ar-schaefli-o-700.webp 700w, img/ar-schaefli-o-1200.webp 1200w, img/ar-schaefli-o-1800.webp 1800w" sizes="(max-width:720px) 100vw, 33vw" width="1800" height="1125" alt="Taverne zum Schäfli, Wigoltingen" loading="lazy" decoding="async"></div><div class="n"><b>Taverne zum Schäfli, Wigoltingen</b><span>schaefli.tastystudios.ch</span></div></a>
+        <a class="platte" data-r="edel" style="--i:0" href="https://schloessli.tastystudios.ch" target="_blank" rel="noopener"><div class="bild"><img src="img/ar-schloessli-o-1200.webp" srcset="img/ar-schloessli-o-700.webp 700w, img/ar-schloessli-o-1200.webp 1200w, img/ar-schloessli-o-1800.webp 1800w" sizes="(max-width:720px) 100vw, 33vw" width="1800" height="1125" alt="Wirtschaft am Schlössli, Bottighofen" loading="lazy" decoding="async"></div><div class="n"><b>Wirtschaft am Schlössli, Bottighofen</b><span>schloessli.tastystudios.ch</span></div></a>
+        <a class="platte" data-r="edel" style="--i:1" href="https://culinarium-hannover-entwurf.vercel.app" target="_blank" rel="noopener"><div class="bild"><img src="img/ar-culinarium-o-1200.webp" srcset="img/ar-culinarium-o-700.webp 700w, img/ar-culinarium-o-1200.webp 1200w, img/ar-culinarium-o-1800.webp 1800w" sizes="(max-width:720px) 100vw, 33vw" width="1800" height="1125" alt="Culinarium, Hannover" loading="lazy" decoding="async"></div><div class="n"><b>Culinarium, Hannover</b><span>culinarium-hannover-entwurf.vercel.app</span></div></a>
+        <a class="platte" data-r="edel" style="--i:2" href="https://wildside.tastystudios.ch" target="_blank" rel="noopener"><div class="bild"><img src="img/ar-wildside-o-1200.webp" srcset="img/ar-wildside-o-700.webp 700w, img/ar-wildside-o-1200.webp 1200w, img/ar-wildside-o-1800.webp 1800w" sizes="(max-width:720px) 100vw, 33vw" width="1800" height="1125" alt="Walk on the Wild Side, Hannover" loading="lazy" decoding="async"></div><div class="n"><b>Walk on the Wild Side, Hannover</b><span>wildside.tastystudios.ch</span></div></a>
+        </div>
+      <ul class="links" data-r>
+        <li><span>Familie Maeder, vier Entwürfe mit Werkbänken</span><a href="https://entwuerfe.tastystudios.ch" target="_blank" rel="noopener">entwuerfe.tastystudios.ch</a></li>
+        <li><span>Salt &amp; Silver, Hamburg</span><a href="https://salt-and-silver-studie.vercel.app" target="_blank" rel="noopener">salt-and-silver-studie.vercel.app</a></li>
+        <li><span>Tasty Studios, unsere Website</span><a href="https://tastystudios.vercel.app" target="_blank" rel="noopener">tastystudios.vercel.app</a></li>
+        <li><span>Die Werkzeuge auf unserer Website</span><a href="https://tastystudios.vercel.app/werkzeuge.html" target="_blank" rel="noopener">tastystudios.vercel.app/werkzeuge</a></li>
+        <li><span>Unsere Arbeiten im Überblick</span><a href="https://tastystudios.vercel.app/work.html" target="_blank" rel="noopener">tastystudios.vercel.app/work</a></li>
+      </ul>
+    </div>
+    <div class="zwei">
+      <div class="kasten vs" data-r><span class="mark">Offen sagen</span><p>Culinarium und Walk on the Wild Side sind Kunden. Die anderen Häuser sind Designstudien: Wir haben sie gebaut, um zu zeigen, was für ein solches Haus möglich ist. Fragt jemand, sag es so.</p></div>
+      <div class="kasten vs" data-r><span class="mark">So zeigst du es</span><p>Lass das Haus den Link <b>auf dem eigenen Handy</b> öffnen und selbst scrollen. Nicht erklären, solange es schaut. Die Frage danach ist wichtiger als jede Erklärung vorher: «Wie fühlt sich das für Ihr Haus an?»</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Teil 2 · Kopf ============ -->
+<section class="fl fl--navy teilkopf" id="teil-2">
+  <div class="in"><div class="kap" data-r><i></i><span>Teil 2</span></div><h2 class="d2" data-r="titel"><span class="z"><span>Wen du ansprichst.</span></span></h2><p class="unter" data-r>Welche Häuser in Zürich passen, wie du ins Gespräch kommst und wie ein Haus vom ersten Namen bis zur laufenden Wartung findet.</p></div>
+</section>
+
+<!-- ============ 06 Kunden ============ -->
+<section class="kapitel fl--nacht" id="k06">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>06 · Kunden</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Welche Häuser</span></span><span class="z"><span>passen.</span></span></h2><div class="lauf" data-r><p>Unser Schwerpunkt ist die Schweiz. Dort gibt es viele sehr gute Häuser, deren Auftritt im Netz nicht zu ihrem Niveau passt, und die Bereitschaft, dafür zu zahlen. Zürich, der See und das Umland sind dein Gebiet.</p></div></div>
+    </div>
+    <div class="geteilt">
+      <div class="block">
+        <div class="zeilen" data-gruppe style="--sp:64px minmax(0,1fr) minmax(0,1.5fr)">
+        <div class="k"><span>Rang</span><span>Wer</span><span>Warum</span></div>
+        <div data-r="staffel" style="--i:0"><span class="nr">1</span><span data-l="Wer">Familien mit mehreren Häusern</span><span data-l="Warum">Jedes Haus bekommt seinen eigenen Stil unter einem gemeinsamen Dach. Ein Gespräch führt zu mehreren Auftritten und einer Wartung über alle Häuser. Beispiel: Familie Maeder.</span></div>
+        <div data-r="staffel" style="--i:1"><span class="nr">2</span><span data-l="Wer">Familiengeführte Hotels und Landgasthöfe</span><span data-l="Warum">Das Haus ist besser als seine Website. Die Familie entscheidet selbst und schnell.</span></div>
+        <div data-r="staffel" style="--i:2"><span class="nr">3</span><span data-l="Wer">Restaurants mit Handschrift, auch mit Stern</span><span data-l="Warum">Kleinere Beträge als bei Hotels, dafür kurze Wege zur Entscheidung.</span></div>
+        </div>
+        <div class="kasten vs" data-r>
+          <span class="mark">Woran du ein passendes Haus erkennst</span>
+          <ul class="liste">
+            <li>Es wird von einer Familie oder den Inhabern geführt, und du erreichst die Menschen, die entscheiden.</li>
+            <li>Haus, Küche und Service sind sichtbar besser als die heutige Website.</li>
+            <li>Es hat eine eigene Geschichte oder einen besonderen Ort, aus dem wir eine Welt bauen können.</li>
+            <li>Eine KI gibt heute über das Haus falsche oder dünne Antworten. Das prüfen wir vorher.</li>
+          </ul>
+        </div>
+        <div class="lauf" data-r><p>Dein Netzwerk in Zürich zählt hier am meisten. Ein Haus, das dich kennt oder über jemanden von dir hört, öffnet die Tür leichter als ein Brief von Unbekannten. Fang bei den Häusern an, in denen du selbst gern Gast bist.</p></div>
+      </div>
+      <div class="bild bild--klebt" data-r="bild"><img src="img/k-tafel-1600.webp" srcset="img/k-tafel-900.webp 900w, img/k-tafel-1600.webp 1600w, img/k-tafel-2400.webp 2400w" sizes="(max-width:980px) 100vw, 40vw" width="2400" height="1340" alt="Ein gedeckter Speisesaal mit hohen Fenstern zum Hafen" loading="lazy" decoding="async"><span class="schild">Das Haus ist besser als seine Website</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 Einstieg ============ -->
+<section class="durchblick" id="k07-durchblick" style="--pos:50% 50%">
+  <div class="durchblick__h"><div class="durchblick__b"><img src="img/fen-kaimauer-1400.webp" srcset="img/fen-kaimauer-900.webp 900w, img/fen-kaimauer-1400.webp 1400w, img/fen-kaimauer-2000.webp 2000w" sizes="100vw" width="2000" height="1116" alt="Die Kaimauer am Abend, ein Boot liegt vor den Speichern" loading="lazy" decoding="async"></div>
+  <div class="durchblick__t"><div><h2 class="d2" data-r="titel"><span class="z"><span>Gäste fragen heute</span></span><span class="z"><span>eine KI, bevor sie buchen.</span></span></h2></div></div></div>
+</section>
+<section class="kapitel fl--nacht" id="k07">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>07 · Einstieg</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Was die KI</span></span><span class="z"><span>über ein Haus sagt.</span></span></h2><div class="lauf" data-r><p>Anna hat es im Grand Beau-Rivage erlebt: Gäste fragten ChatGPT nach einem Hotel mit bestimmten Merkmalen in Interlaken, bekamen das Rivage empfohlen, kamen an und waren enttäuscht, weil die Antwort nicht der Wirklichkeit entsprach. Unter Hoteliers ist das gerade ein grosses Thema. Eine neue Website wird gern aufgeschoben. Eine falsche KI-Antwort trifft das Haus beim nächsten Gast.</p></div></div>
+    </div>
+    <div class="leitsatz" data-r><p class="d3">Wir gehen über dieses Problem ins Gespräch. Der vorgebaute Auftritt ist die Lösung, die schon fertig daliegt.</p><span class="quelle">Annas Gedanke, 30.10.2026</span></div>
+    <div class="zwei">
+      <div class="block">
+        <h3 class="d4" data-r>Der KI-Check</h3>
+        <ul class="liste" data-r>
+          <li>Wir stellen ChatGPT und Gemini die Fragen, die Gäste in der Region stellen, und halten fest, was über das Haus gesagt wird und was davon nicht stimmt.</li>
+          <li>Wir prüfen, ob die heutige Website für eine KI lesbar ist.</li>
+          <li>Das Ergebnis bringst du als kurzen Bericht mit, zusammen mit dem vorgebauten Auftritt, der die Lücken schliesst.</li>
+          <li>Den Check macht Robert für jedes Haus, das du nennst, kostenlos und vor deinem ersten Termin.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h3 class="d4" data-r>Die Frage, mit der du anfängst</h3>
+        <div class="leitsatz" data-r><p class="d3">«Haben Sie schon einmal ChatGPT gefragt, was es über Ihr Haus erzählt?»</p></div>
+        <div class="lauf" data-r><p>Die meisten haben es nicht. Dann zeigst du, was du mitgebracht hast.</p></div>
+      </div>
+    </div>
+    <div class="block">
+      <h3 class="d4" data-r>Was wir bauen können und was nicht</h3>
+      <div class="zeilen" data-gruppe style="--sp:minmax(0,200px) minmax(0,1fr)">
+        <div data-r="staffel" style="--i:0"><span class="ja">Können wir</span><span>Angaben zum Haus für Google und KI, ein Teil mit Fragen und Antworten, monatliche Stichprobe in ChatGPT, Inhalte nach Sprache und Land.</span></div>
+        <div data-r="staffel" style="--i:1"><span class="of">Nicht ohne Weiteres</span><span>Eine eigene Buchungs-App in ChatGPT, eine Vorhersage, wie wahrscheinlich ein Besucher bucht, und das Auslesen fremder Buchungsmasken.</span></div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 Ablauf ============ -->
+<section class="kapitel fl--navy" id="k08">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>08 · Ablauf</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Vom Namen</span></span><span class="z"><span>bis zur Wartung.</span></span></h2><div class="lauf" data-r><p>Der Weg von einem Haus, das dir einfällt, bis zur laufenden Wartung. Du öffnest die Tür und führst das Gespräch, Robert baut und zeigt die Werkzeuge.</p></div></div>
+    </div>
+    <div class="leitsatz" data-r><p class="d3">Wir bauen den Auftritt vor, zeigen ihn und reden erst dann über Geld.</p><span class="quelle">Gilt seit dem 1. Oktober 2026</span></div>
+    <div class="block">
+      <div class="zeilen" data-gruppe style="--sp:64px minmax(0,1fr) minmax(0,140px)">
+        <div data-r="staffel" style="--i:0"><span class="nr">1</span><span>Du schickst Robert das Haus: Name, Website, wer entscheidet und warum es passt.</span><span class="wer">Ludwig</span></div>
+        <div data-r="staffel" style="--i:1"><span class="nr">2</span><span>KI-Check und den Auftritt vorbauen, rund zwei Tage je Haus. Du bekommst den Link und den Bericht.</span><span class="wer">Robert</span></div>
+        <div data-r="staffel" style="--i:2"><span class="nr">3</span><span>Du gehst vorbei oder rufst an und vereinbarst einen Termin mit der Familie oder der Direktion.</span><span class="wer">Ludwig</span></div>
+        <div data-r="staffel" style="--i:3"><span class="nr">4</span><span>Das Gespräch. Du führst, Robert zeigt die Werkzeuge, vor Ort oder per Video zugeschaltet.</span><span class="wer">gemeinsam</span></div>
+        <div data-r="staffel" style="--i:4"><span class="nr">5</span><span>Schriftliches Angebot und Vertrag an das Haus.</span><span class="wer">Robert</span></div>
+        <div data-r="staffel" style="--i:5"><span class="nr">6</span><span>Fertigstellen, alles vollständig prüfen, online stellen und das Team in die Werkzeuge einführen.</span><span class="wer">Robert</span></div>
+        <div data-r="staffel" style="--i:6"><span class="nr">7</span><span>Wartung Monat für Monat. Du hältst den Kontakt zum Haus, wir kümmern uns um Technik und Inhalte.</span><span class="wer">gemeinsam</span></div>
+        </div>
+    </div>
+    <div class="zwei">
+      <div class="lauf" data-r><p>Das Angebot ans Grand Beau-Rivage ging raus, bevor die Eigentümer wussten, was dahintersteht. Am 1. Oktober haben sie sich gegen den Neubau entschieden. Seitdem gilt die umgekehrte Reihenfolge, und die gilt auch für dich: erst zeigen, dann über Zahlen sprechen.</p></div>
+      <div class="kasten vs" data-r><span class="mark">Wer nicht einsteigt</span><p>Sagt ein Haus nein, ist nichts verloren. Der Auftritt bleibt bei uns als Designstudie. Die Seite ist für Suchmaschinen gesperrt und nur über den Link erreichbar, den du dem Haus gibst.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Teil 3 · Fenster ============ -->
+<section class="durchblick durchblick--hoch" id="teil-3" style="--pos:50% 50%">
+  <div class="durchblick__h"><div class="durchblick__b"><img src="img/fen-terrasse-1400.webp" srcset="img/fen-terrasse-900.webp 900w, img/fen-terrasse-1400.webp 1400w, img/fen-terrasse-2000.webp 2000w" sizes="100vw" width="2000" height="1116" alt="Eine Terrasse am Hafen in der Abenddämmerung, Lichterketten über den Tischen" loading="lazy" decoding="async"></div>
+  <div class="durchblick__t"><div><div class="kap"><i></i><span>Teil 3</span></div><h2 class="d2" data-r="titel"><span class="z"><span>Das Gespräch.</span></span></h2><span class="unter">Wie ein Termin läuft, was es kostet, was gefragt wird, wie wir klingen und was du nie zusagst.</span></div></div></div>
+</section>
+
+<!-- ============ 09 Gespräch ============ -->
+<section class="kapitel fl--nacht" id="k09">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>09 · Gespräch</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>In fünf</span></span><span class="z"><span>Schritten.</span></span></h2><div class="lauf" data-r><p>Ein Termin mit einem Haus braucht keine Präsentation. Du stellst Fragen, zeigst, was wir schon gebaut haben, und vereinbarst den nächsten Schritt.</p></div></div>
+    </div>
+    <div class="geteilt">
+      <div class="block">
+        <div class="zeilen" data-gruppe style="--sp:64px minmax(0,1fr)">
+        <div data-r="staffel" style="--i:0"><span class="nr">1</span><span><b style="color:var(--fg);font-weight:500">Das Haus zuerst.</b> Wie buchen Gäste heute? Wer pflegt die Website, und wie lange dauert eine Änderung? Was ärgert sie am heutigen Auftritt?</span></div>
+        <div data-r="staffel" style="--i:1"><span class="nr">2</span><span><b style="color:var(--fg);font-weight:500">Die KI-Frage.</b> Zeig den Bericht aus dem KI-Check: was ChatGPT über das Haus sagt und was davon nicht stimmt.</span></div>
+        <div data-r="staffel" style="--i:2"><span class="nr">3</span><span><b style="color:var(--fg);font-weight:500">Der Auftritt.</b> Das Haus öffnet seine neue Website auf dem eigenen Handy und scrollt selbst. Du wartest.</span></div>
+        <div data-r="staffel" style="--i:3"><span class="nr">4</span><span><b style="color:var(--fg);font-weight:500">Ein Werkzeug im Einsatz.</b> Ein Gericht auf der Karte ändern und zeigen, wie Website und Druck-PDF mitziehen. Ein Beispiel reicht.</span></div>
+        <div data-r="staffel" style="--i:4"><span class="nr">5</span><span><b style="color:var(--fg);font-weight:500">Der nächste Schritt.</b> Ein fester Termin mit Robert, an dem das Haus seine Fragen zu den Werkzeugen stellt. Das schriftliche Angebot kommt danach.</span></div>
+        </div>
+      </div>
+      <div class="bild bild--quer bild--klebt" data-r="bild"><img src="img/k-bar-1600.webp" srcset="img/k-bar-900.webp 900w, img/k-bar-1600.webp 1600w, img/k-bar-2400.webp 2400w" sizes="(max-width:980px) 100vw, 40vw" width="2400" height="1340" alt="Eine Bar mit warm beleuchtetem Regal, vor den Fenstern der Hafen" loading="lazy" decoding="async"><span class="schild">Erst zuhören, dann zeigen</span></div>
+    </div>
+    <div class="platten" data-gruppe>
+      <div class="platte" data-r="edel" style="--i:0"><small>Mitbringen</small><h3>Handy und Bericht</h3><p>Den Link zum Auftritt des Hauses, den Bericht aus dem KI-Check und dieses Papier, damit du jedes Werkzeug direkt öffnen kannst.</p></div>
+      <div class="platte" data-r="edel" style="--i:1"><small>Am Tisch</small><h3>Wer entscheidet</h3><p>Sprich mit der Familie, dem Inhaber oder der Direktion. Ein Gespräch mit jemandem, der weitergeben muss, kostet einen Termin mehr.</p></div>
+      <div class="platte" data-r="edel" style="--i:2"><small>Danach</small><h3>Kurz an Robert</h3><p>Am selben Tag drei Sätze an Robert: wie es ankam, welche Fragen offen sind und was als Nächstes vereinbart ist.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 Preise ============ -->
+<section class="kapitel fl--navy" id="k10">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>10 · Preise</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Was ein Haus</span></span><span class="z"><span>zahlt.</span></span></h2><div class="lauf" data-r><p>Uns geht es vor allem um die monatliche Wartung. Die Website kostet einmal einen Festpreis, die sieben Werkzeuge gibt es nur im Abo zusammen mit der Wartung. Alle Beträge netto in Franken. Den Verbrauch der KI zahlt das Haus direkt beim Anbieter, so bleibt die Wartung ein fester Betrag.</p></div></div>
+    </div>
+    <div class="leitsatz" data-r><p class="d3">Die Wartung ist das, worum es geht. Sie hält die Seite am Laufen und schaltet die sieben Werkzeuge frei.</p></div>
+    <div class="zahlen" data-gruppe>
+      <div class="zahl" data-r style="--i:0"><b><small>CHF</small><span data-zahl="600">600</span></b><span>Wartung Hotel, im Monat. Mit allen sieben Werkzeugen.</span></div>
+      <div class="zahl" data-r style="--i:1"><b><small>CHF</small><span data-zahl="300">300</span></b><span>Wartung Restaurant, im Monat. Mit allen sieben Werkzeugen.</span></div>
+    </div>
+    <div class="block">
+      <div class="zeilen preise" data-gruppe style="--sp:minmax(0,1.3fr) minmax(0,1fr) minmax(0,.8fr) minmax(0,110px)">
+        <div class="k"><span>Teil</span><span>Hotel</span><span>Restaurant</span><span>Bezahlt</span></div>
+        <div data-r="staffel" style="--i:0"><span>Wartung mit den sieben Werkzeugen</span><span data-l="Hotel" class="betrag">CHF 600</span><span data-l="Restaurant" class="betrag">CHF 300</span><span class="vs">im Monat</span></div>
+        <div data-r="staffel" style="--i:1"><span>Website</span><span data-l="Hotel" class="betrag">CHF 10'000 bis 15'000</span><span data-l="Restaurant" class="betrag">CHF 5'000</span><span class="vs">einmalig</span></div>
+        <div data-r="staffel" style="--i:2"><span>Verbrauch der KI</span><span data-l="Hotel">direkt beim Anbieter</span><span data-l="Restaurant">direkt beim Anbieter</span><span class="vs">nach Verbrauch</span></div>
+        </div>
+    </div>
+    <div class="platten" data-gruppe>
+      <div class="platte" data-r="edel" style="--i:0"><small>Hotel-Website</small><h3>Je nach Grösse</h3><p>CHF 10'000 bis 15'000, je nach Grösse des Hauses und Umfang der Seite. Den genauen Betrag legt Robert im Angebot fest.</p></div>
+      <div class="platte" data-r="edel" style="--i:1"><small>Nur im Abo</small><h3>Die Werkzeuge</h3><p>Die sieben Werkzeuge werden nie einzeln verkauft. Das Haus bekommt sie mit der monatlichen Wartung, solange die Wartung läuft.</p></div>
+      <div class="platte" data-r="edel" style="--i:2"><small>Das ist die Wartung</small><h3>Wir sind dabei</h3><p>Server, Domain, Sicherungen, die sieben Werkzeuge und das aktuell gehaltene Wissen der KI. Wir reagieren sofort, wenn etwas ist, und Fehler beheben wir ohne Rechnung.</p></div>
+    </div>
+    <div class="platten platten--2" data-gruppe>
+      <div class="platte" data-r="edel" style="--i:0"><small>Das gehört dem Haus</small><h3>Website und Domain</h3><p>Der Code der Website ist einmal geschrieben und danach Eigentum des Hauses, jederzeit. Das Haus darf ihn mitnehmen.</p></div>
+      <div class="platte" data-r="edel" style="--i:1"><small>So sagst du es</small><h3>Erst die Wartung</h3><p>Sprich zuerst über den Monatsbetrag und was er dem Haus bringt. Der Festpreis der Website ist der Einstieg, die Wartung die Zusammenarbeit.</p></div>
+    </div>
+    <div class="zwei">
+      <div class="kasten vs" data-r><span class="mark">Familien mit mehreren Häusern</span><p>Führt eine Familie mehrere Häuser, nennst du die Preise je Haus und sagst, dass Robert für die ganze Gruppe ein eigenes Angebot macht. Den Betrag dafür legt Robert fest.</p></div>
+      <div class="kasten" data-r><span class="mark">Für dich</span><p>Du nennst die Preise so, wie sie hier stehen. <b>Nachlass, Sonderpreise oder Ratenzahlung nur nach Rücksprache mit Robert.</b> Das verbindliche Angebot kommt immer schriftlich von uns.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 Fragen ============ -->
+<section class="kapitel fl--nacht" id="k11">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>11 · Fragen</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Was gefragt</span></span><span class="z"><span>wird.</span></span></h2><div class="lauf" data-r><p>Die Fragen, die in fast jedem Gespräch kommen, mit der Antwort, die stimmt. Was hier nicht steht, beantwortet Robert. «Das kläre ich und melde mich morgen» ist immer eine gute Antwort.</p></div></div>
+    </div>
+    <div class="block">
+      <div class="zeilen fragen" data-gruppe style="--sp:minmax(0,.8fr) minmax(0,1.6fr)">
+        <div data-r="staffel" style="--i:0"><span>Gehört mir die Website?</span><span>Ja. Website und Domain gehören dem Haus, jederzeit. Der Code ist einmal geschrieben, das Haus darf alles mitnehmen.</span></div>
+        <div data-r="staffel" style="--i:1"><span>Muss ich die Wartung buchen?</span><span>Für die Werkzeuge ja: Es gibt sie nur im Abo mit der Wartung. Die Website selbst läuft auch ohne. Ohne Wartung zahlt das Haus die laufenden Kosten wie die Domain selbst und trägt die Verantwortung für alles, was nach der Übergabe passiert. Mit Wartung reagieren wir sofort, und Fehler beheben wir ohne Rechnung.</span></div>
+        <div data-r="staffel" style="--i:2"><span>Ist das sicher?</span><span>Wir arbeiten auf einer sehr guten und sicheren Grundlage, die weit über dem liegt, was am Markt üblich ist. Was sich vorhersehen lässt, haben wir vorbereitet. Wo unsere Verantwortung nach der Übergabe endet, steht im schriftlichen Vertrag.</span></div>
+        <div data-r="staffel" style="--i:3"><span>Können wir das selbst pflegen?</span><span>Ja. Mit «Website bearbeiten» ändert das Team Texte, Fotos, Zeiten, Preise und Sprachen selbst, mit «Karten &amp; Preislisten» die Karten. Keine Zeile Code. Die Werkzeuge sind in der monatlichen Wartung enthalten.</span></div>
+        <div data-r="staffel" style="--i:4"><span>Was passiert mit unserem Buchungssystem?</span><span>Es bleibt. Die Website führt zur bestehenden Buchung des Hauses.</span></div>
+        <div data-r="staffel" style="--i:5"><span>Wir haben schon eine Agentur.</span><span>Bei uns kommen Website, Werkzeuge, Drucksachen und KI aus einer Hand. Der Auftritt für Ihr Haus liegt schon fertig da. Ansehen kostet nichts.</span></div>
+        <div data-r="staffel" style="--i:6"><span>Ist das alles mit KI gemacht?</span><span>Wir arbeiten mit KI, und jede Seite wird von Hand gestaltet und geprüft. Auf der Website stehen die echten Bilder des Hauses.</span></div>
+        <div data-r="staffel" style="--i:7"><span>Warum gibt es schon eine Seite? Ich habe nichts bestellt.</span><span>Wir zeigen lieber, als zu fragen. Gefällt sie Ihnen nicht, bleibt sie bei uns als Designstudie. Sie ist für Suchmaschinen gesperrt und nur über diesen Link zu sehen.</span></div>
+        <div data-r="staffel" style="--i:8"><span>Kann ich nur die Werkzeuge kaufen?</span><span>Nein. Die Werkzeuge gibt es nur im Abo mit der Wartung, für Hotels CHF 600 und für Restaurants CHF 300 im Monat.</span></div>
+        <div data-r="staffel" style="--i:9"><span>Was kostet die KI im Chat?</span><span>Den Verbrauch zahlt das Haus direkt beim Anbieter. Unsere Wartung bleibt dadurch ein fester Betrag.</span></div>
+        <div data-r="staffel" style="--i:10"><span>Wie schnell ist das online?</span><span>Den Auftritt sehen Sie heute schon. Den Zeitplan bis zum Online-Gehen schreibt Robert ins Angebot.</span></div>
+        </div>
+    </div>
+    <div class="kasten" data-r><span class="mark">Über Sicherheit sprechen</span><p>Das Haus soll spüren, dass seine Seite sicher ist. Sicherheitslücken stellen wir nicht als Risiko in den Raum, wer das ausführlich anspricht, macht es erst denkbar. Dass Sicherheit relativ ist und niemand abfangen kann, was keiner kommen sieht, sagst du fair, kurz und ohne Gewicht.</p></div>
+  </div>
+</section>
+
+<!-- ============ 12 Stimme ============ -->
+<section class="kapitel fl--navy" id="k12">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>12 · Stimme</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Wie wir</span></span><span class="z"><span>klingen.</span></span></h2><div class="lauf" data-r><p>Ruhig, klar, ohne Show. Wir sprechen wie jemand, der den Betrieb kennt, nicht wie eine Agentur, die etwas verkaufen will. Mit den Häusern siezen wir, in Unterlagen auch.</p></div></div>
+    </div>
+    <div class="geteilt">
+      <div class="bild bild--quer" data-r="bild"><img src="img/k-m-papier-1600.webp" srcset="img/k-m-papier-900.webp 900w, img/k-m-papier-1600.webp 1600w, img/k-m-papier-2400.webp 2400w" sizes="(max-width:980px) 100vw, 45vw" width="2400" height="1792" alt="Ein Briefumschlag mit Siegel und ein Blatt Papier auf dunklem Holz" loading="lazy" decoding="async"><span class="schild">Jeder Satz hat einen Zweck</span></div>
+      <div class="platten" style="grid-template-columns:minmax(0,1fr)" data-gruppe>
+        <div class="platte" data-r="edel" style="--i:0"><small>Wertigkeit</small><p>Jeder Satz wertet das Haus auf: Sorgfalt, Handarbeit, der einzelne Gast, der einzelne Teller. Zahlen nur als Exklusivität, wenige Plätze, nie als Menge, die abgearbeitet wird.</p></div>
+        <div class="platte" data-r="edel" style="--i:1"><small>Konkret</small><p>Wir sagen, was passiert: «Die Küche nimmt ein Gericht auf, und Website, Karte und Chat wissen es.»</p></div>
+        <div class="platte" data-r="edel" style="--i:2"><small>Gewöhnliche Wörter</small><p>Vokabular aus Handwerk, Küche und Haus. Keine englischen Tech-Namen und keine Kunstwörter.</p></div>
+      </div>
+    </div>
+    <div class="paar" data-gruppe>
+      <div class="platte" data-r="edel" style="--i:0"><small>So</small><p>Gäste fragen heute eine KI, bevor sie buchen.</p><p>Jeder Teller von Hand angerichtet.</p><p>Eine Website, die sich anfühlt wie das Haus.</p></div>
+      <div class="platte nie" data-r="edel" style="--i:1"><small class="offen">Nie</small><p>Revolutionieren Sie Ihr Hotel mit KI!</p><p>Nur noch heute zu diesem Preis.</p><p>Vierzehn Teller, jeden Abend.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13 Grenzen ============ -->
+<section class="kapitel fl--nacht" id="k13">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>13 · Grenzen</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Was du nie</span></span><span class="z"><span>zusagst.</span></span></h2><div class="lauf" data-r><p>Ein Versprechen, das wir nicht halten, kostet mehr als ein verlorenes Haus. Bei allem, was hier steht, sagst du: «Das bespreche ich mit Robert.»</p></div></div>
+    </div>
+    <div class="platten platten--2" data-gruppe>
+      <div class="platte" data-r="edel" style="--i:0"><small>Noch nicht</small><h3>Jedem Gast seine Seite</h3><p>Eine Website, die jedem Gast zeigt, was zu ihm passt. Daran arbeiten wir, versprochen wird sie erst nach einem erprobten Pilot.</p></div>
+      <div class="platte" data-r="edel" style="--i:1"><small>Eigene Baustelle</small><h3>Buchungs-App in ChatGPT</h3><p>Eine eigene Buchung direkt im Chat von ChatGPT bauen wir nicht ohne Weiteres.</p></div>
+      <div class="platte" data-r="edel" style="--i:2"><small>Nie versprechen</small><h3>Platz eins</h3><p>Weder bei Google noch eine bestimmte Antwort in ChatGPT. Wir machen das Haus lesbar, die Antwort gibt die KI.</p></div>
+      <div class="platte" data-r="edel" style="--i:0"><small>Nur mit Robert</small><h3>Nachlass</h3><p>Sonderpreise, Nachlass oder Ratenzahlung gibt es nur nach Rücksprache mit Robert.</p></div>
+      <div class="platte" data-r="edel" style="--i:1"><small>Steht im Angebot</small><h3>Termin fürs Online-Gehen</h3><p>Wann die Seite online geht, schreibt Robert ins schriftliche Angebot.</p></div>
+      <div class="platte" data-r="edel" style="--i:2"><small>Kommt von uns</small><h3>Angebot und Vertrag</h3><p>Du unterschreibst nichts für Tasty Studios. Angebot und Vertrag kommen schriftlich von uns.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Teil 4 · Kopf ============ -->
+<section class="fl fl--navy teilkopf" id="teil-4">
+  <div class="in"><div class="kap" data-r><i></i><span>Teil 4</span></div><h2 class="d2" data-r="titel"><span class="z"><span>Du und wir.</span></span></h2><p class="unter" data-r>Was du verdienst, wer was übernimmt und womit du in den ersten Wochen anfängst.</p></div>
+</section>
+
+<!-- ============ 14 Beteiligung ============ -->
+<section class="kapitel fl--nacht beteil" id="k14">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>14 · Beteiligung</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Was du</span></span><span class="z"><span>verdienst.</span></span></h2><div class="lauf" data-r><p>Bei den ersten zwei Websites, die du abschliesst, bekommst du den Festpreis der Website. Davon gehen 10 Prozent ab für Roberts KI-Kosten. Alles, was danach kommt, besprechen wir noch.</p></div></div>
+    </div>
+    <div class="zahlen" data-gruppe>
+      <div class="zahl" data-r style="--i:0"><b><span data-zahl="2">2</span><small>Websites</small></b><span>Die ersten zwei Häuser, die du abschliesst.</span></div>
+      <div class="zahl" data-r style="--i:1"><b><span data-zahl="90">90</span><small>Prozent</small></b><span>des Festpreises der Website gehen an dich.</span></div>
+      <div class="zahl" data-r style="--i:2"><b><span data-zahl="10">10</span><small>Prozent</small></b><span>gehen an Robert für die Kosten der KI.</span></div>
+    </div>
+    <div class="block">
+      <h3 class="d4" data-r>So sieht das in Franken aus</h3>
+      <div class="zeilen preise" data-gruppe style="--sp:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr)">
+        <div class="k"><span>Haus</span><span>Festpreis</span><span>10 % KI-Kosten</span><span>An dich</span></div>
+        <div data-r="staffel" style="--i:0"><span>Hotel, klein</span><span data-l="Festpreis" class="betrag">CHF 10'000</span><span data-l="10 % KI-Kosten" class="betrag">CHF 1'000</span><span data-l="An dich" class="betrag">CHF 9'000</span></div>
+        <div data-r="staffel" style="--i:1"><span>Hotel, gross</span><span data-l="Festpreis" class="betrag">CHF 15'000</span><span data-l="10 % KI-Kosten" class="betrag">CHF 1'500</span><span data-l="An dich" class="betrag">CHF 13'500</span></div>
+        <div data-r="staffel" style="--i:2"><span>Restaurant</span><span data-l="Festpreis" class="betrag">CHF 5'000</span><span data-l="10 % KI-Kosten" class="betrag">CHF 500</span><span data-l="An dich" class="betrag">CHF 4'500</span></div>
+        </div>
+    </div>
+    <div class="kasten" data-r><span class="mark">Ab dem dritten Haus</span><p>Alles, was nach den ersten zwei Websites kommt, besprechen wir noch gemeinsam.</p></div>
+  </div>
+</section>
+
+<!-- ============ 15 Rollen ============ -->
+<section class="kapitel fl--navy" id="k15">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>15 · Rollen</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Wer was</span></span><span class="z"><span>übernimmt.</span></span></h2><div class="lauf" data-r><p>Du bist unser Gesicht in Zürich. Du kennst die Häuser, öffnest die Tür und führst das Gespräch. Wir bauen, zeigen die Werkzeuge und halten die Häuser danach am Laufen.</p></div></div>
+    </div>
+    <div class="rollen3" data-gruppe>
+      <div class="platte" data-r="edel" style="--i:0"><small>Zürich</small><h3>Ludwig</h3><ul class="liste"><li>Häuser auswählen und an Robert schicken</li><li>Termine vereinbaren und das Gespräch führen</li><li>Den Kontakt zum Haus halten, auch nach dem Abschluss</li></ul></div>
+      <div class="platte" data-r="edel" style="--i:1"><small>Studio</small><h3>Robert</h3><ul class="liste"><li>KI-Check und Auftritt vorbauen</li><li>Die Werkzeuge im Gespräch zeigen</li><li>Angebot, Vertrag, Fertigstellen und Technik</li></ul></div>
+      <div class="platte" data-r="edel" style="--i:2"><small>Wartung</small><h3>Anna</h3><ul class="liste"><li>Ansprechpartnerin der Häuser in der Wartung</li><li>Weiss bei jeder Meldung, welches Werkzeug gemeint ist</li><li>Kennt die Schweizer Hotellerie von innen</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 16 Erste Schritte ============ -->
+<section class="kapitel fl--nacht" id="k16">
+  <div class="in">
+    <div class="kopf">
+      <div class="kopf__l"><div class="kap"><i></i><span>16 · Erste Schritte</span></div></div>
+      <div class="kopf__r"><h2 class="d2" data-r="titel"><span class="z"><span>Womit du</span></span><span class="z"><span>anfängst.</span></span></h2><div class="lauf" data-r><p>Ein Rahmen für die ersten Wochen. Wie schnell es geht, bestimmst du.</p></div></div>
+    </div>
+    <div class="fahrplan" data-gruppe>
+      <div class="ph" data-r style="--i:0"><b>Ansehen</b><p>Dieses Papier lesen, jedes Haus aus Kapitel 05 auf dem Handy durchklicken und jedes Werkzeug aus Kapitel 03 einmal öffnen.</p></div>
+      <div class="ph" data-r style="--i:1"><b>Fünf Häuser</b><p>Fünf Häuser aus Zürich an Robert schicken: Name, Website, wer entscheidet, warum es passt.</p></div>
+      <div class="ph" data-r style="--i:2"><b>Vorbauen</b><p>Robert macht für das erste Haus den KI-Check und baut den Auftritt vor. Du bekommst Link und Bericht.</p></div>
+      <div class="ph" data-r style="--i:3"><b>Erster Termin</b><p>Du führst das Gespräch, Robert ist per Video dabei. Danach besprechen wir, was wir an diesem Papier schärfen.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Schluss ============ -->
+<section class="schluss" id="schluss">
+  <img src="img/st-s-aussen-wasser-1400.webp" srcset="img/st-s-aussen-wasser-900.webp 900w, img/st-s-aussen-wasser-1400.webp 1400w, img/st-s-aussen-wasser-2000.webp 2000w" sizes="100vw" width="2000" height="1116" alt="Ein alter Speicher am Wasser in der Abenddämmerung" loading="lazy" decoding="async">
+  <div class="in">
+    <div class="kap" data-r><i></i><span>Tasty Studios · Zürich</span></div>
+    <h2 class="d2" data-r="titel"><span class="z"><span>Erst zeigen,</span></span><span class="z"><span>dann reden.</span></span></h2>
+    <p data-r>Internes Briefing für Ludwig. Nicht zur Weitergabe an Häuser. Fragen, die hier keine Antwort finden, gehen an Robert.</p>
+    <div class="kn-reihe" data-r><a class="kn " href="https://tastystudios.vercel.app" target="_blank" rel="noopener" ><span>Unsere Website</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></i></a><a class="kn kn--zwei " href="https://carlton.tastystudios.ch/werkbank/" target="_blank" rel="noopener" ><span>Eine Werkbank ansehen</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></i></a></div>
+    <div class="fuss"><span>Stand 11.11.2026</span><span><a href="#oben">Nach oben</a></span></div>
+  </div>
+</section>
+
+</main>
+
+<script>
+/* Ein Takt, nativer Scroll, Bewegung nur über transform und opacity. Fällt das Skript aus, steht alles sichtbar da. */
+(function () {
+  'use strict';
+  var doc = document.documentElement;
+  var ruhig = matchMedia('(prefers-reduced-motion: reduce)').matches || /[?&]nomotion/.test(location.search);
+  var hatIO = 'IntersectionObserver' in window;
+  function alle(s, w) { return [].slice.call((w || document).querySelectorAll(s)); }
+
+  /* Fotos früh holen: was in den nächsten Fensterhöhen liegt, wird vorgezogen */
+  var faul = alle('img[loading="lazy"]');
+  if (faul.length && hatIO) {
+    var nah = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (!e.isIntersecting) return; nah.unobserve(e.target); e.target.loading = 'eager'; });
+    }, { rootMargin: '220% 0px 220% 0px' });
+    faul.forEach(function (im) { nah.observe(im); });
+  }
+
+  var ziele = alle('[data-r]');
+  function wennBereit(el, dann) {
+    var offen = el.tagName === 'IMG' ? [el] : alle('img', el).filter(function (im) { return im.offsetParent !== null; });
+    var n = offen.length, los = false;
+    var fertig = function () { if (los) return; los = true; dann(); };
+    if (!n) return fertig();
+    var eins = function () { if (--n <= 0) fertig(); };
+    offen.forEach(function (im) {
+      if (im.complete && im.naturalWidth) return eins();
+      im.loading = 'eager';
+      im.addEventListener('load', eins, { once: true });
+      im.addEventListener('error', eins, { once: true });
+    });
+    setTimeout(fertig, 1200);
+  }
+  if (ruhig || !hatIO) {
+    ziele.forEach(function (el) { el.classList.add('da'); });
+    alle('.kap,.durchblick').forEach(function (el) { el.classList.add('da'); });
+  } else {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('da'); io.unobserve(e.target); } });
+    }, { rootMargin: '100000px 0px -9% 0px', threshold: 0.04 });
+    var bio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (!e.isIntersecting) return; bio.unobserve(e.target); wennBereit(e.target, function () { e.target.classList.add('da'); }); });
+    }, { rootMargin: '100000px 0px 2% 0px', threshold: 0.01 });
+    var gio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return; gio.unobserve(e.target);
+        wennBereit(e.target, function () { e.target.classList.add('da'); alle('[data-r]', e.target).forEach(function (k) { k.classList.add('da'); }); });
+      });
+    }, { rootMargin: '100000px 0px -4% 0px', threshold: 0.05 });
+    alle('[data-gruppe]').forEach(function (g) { gio.observe(g); });
+    /* Fenster: der Satz startet, wenn der Ausschnitt ihn zu zwei Dritteln freigibt */
+    alle('.durchblick').forEach(function (b) {
+      var fio = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (!e.isIntersecting) return; fio.disconnect(); b.classList.add('da'); alle('[data-r],.kap', b).forEach(function (k) { k.classList.add('da'); }); });
+      }, { rootMargin: '100000px 0px -30% 0px', threshold: 0.01 });
+      fio.observe(b);
+    });
+    ziele.forEach(function (el) {
+      if (el.closest('.hero')) return;
+      if (el.closest('.durchblick') || el.closest('[data-gruppe]')) return;
+      var art = el.getAttribute('data-r');
+      if (art === 'bild' || art === 'schweb' || art === 'edel') bio.observe(el); else io.observe(el);
+    });
+    alle('.kap:not([data-r])').forEach(function (k) { if (!k.closest('.durchblick') && !k.closest('.hero')) io.observe(k); });
+  }
+
+  /* Erster Blick komplett: die Seite wird erst sichtbar, wenn das Bild im Auftakt geladen ist, dann kommt alles in einem Moment */
+  var hero = document.querySelector('.hero');
+  function zeigeSeite() {
+    doc.classList.remove('warte');
+    requestAnimationFrame(function () { requestAnimationFrame(function () { hero.classList.add('da'); alle('[data-r],.kap', hero).forEach(function (k) { k.classList.add('da'); }); }); });
+  }
+  var erst = alle('img', hero), offenH = erst.length, losH = false;
+  var fertigH = function () { if (losH) return; losH = true; zeigeSeite(); };
+  var einerH = function () { if (--offenH <= 0) fertigH(); };
+  if (!offenH) fertigH();
+  erst.forEach(function (im) { if (im.complete && im.naturalWidth) return einerH(); im.addEventListener('load', einerH, { once: true }); im.addEventListener('error', einerH, { once: true }); });
+  setTimeout(fertigH, 3500);
+
+  /* Grosse Zahlen: hochzählen, sobald sie im Bild sind */
+  var zahlen = alle('[data-zahl]');
+  function zeige(el, w) { el.textContent = (w >= 1000) ? String(w).replace(/\B(?=(\d{3})+(?!\d))/g, "'") : String(w); }
+  zahlen.forEach(function (el) { zeige(el, +el.getAttribute('data-zahl')); });
+  if (zahlen.length && !ruhig && hatIO) {
+    var zio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return; zio.unobserve(e.target);
+        var el = e.target, ziel = +el.getAttribute('data-zahl'), t0 = null, dauer = 1500;
+        if (ziel <= 3) return;
+        function schritt(t) { if (!t0) t0 = t; var p = Math.min(1, (t - t0) / dauer), w = 1 - Math.pow(1 - p, 4); zeige(el, Math.round(ziel * w)); if (p < 1) requestAnimationFrame(schritt); }
+        zeige(el, 0);
+        setTimeout(function () { requestAnimationFrame(schritt); }, 250);
+      });
+    }, { threshold: 0.3 });
+    zahlen.forEach(function (z) { zio.observe(z); });
+  }
+
+  /* Leiste, Fortschritt, Kapitel-Leiste: ein Takt */
+  var leiste = document.getElementById('leiste'), balken = document.getElementById('fortschritt');
+  var rail = alle('#rail a'), teile = alle('.leiste nav a');
+  var yAlt = window.scrollY, wartet = false;
+  function takt() {
+    wartet = false;
+    var y = window.scrollY, h = doc.scrollHeight - innerHeight;
+    balken.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, y / h) : 0) + ')';
+    if (y > 120 && y > yAlt + 6) leiste.classList.add('weg'); else if (y < yAlt - 6 || y <= 120) leiste.classList.remove('weg');
+    yAlt = y;
+  }
+  addEventListener('scroll', function () { if (!wartet) { wartet = true; requestAnimationFrame(takt); } }, { passive: true });
+  takt();
+  if (hatIO) {
+    var aktiv = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var id = e.target.id;
+        rail.forEach(function (a) { a.classList.toggle('an', a.getAttribute('href') === '#' + id); });
+        var t = ({k01:'1',k02:'1',k03:'1',k04:'1',k05:'1',k06:'2',k07:'2',k08:'2',k09:'3',k10:'3',k11:'3',k12:'3',k13:'3'})[id] || '4';
+        teile.forEach(function (a) { a.classList.toggle('an', a.getAttribute('data-teil') === t); });
+      });
+    }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+    alle('.kapitel[id]').forEach(function (s) { aktiv.observe(s); });
+  }
+  /* Sprünge aus Leiste und Kapitel-Leiste: weich, aber nativ */
+  alle('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (ev) {
+      var z = document.querySelector(a.getAttribute('href')); if (!z) return;
+      ev.preventDefault(); z.scrollIntoView({ behavior: ruhig ? 'auto' : 'smooth', block: 'start' });
+      history.replaceState(null, '', a.getAttribute('href'));
+    });
+  });
+})();
+</script>
+<script>
+/* Ebenen der Abschnitte, Werkzeug-Wähler */
+(function () {
+  'use strict';
+  [].slice.call(document.querySelectorAll('main>*')).forEach(function (s, i) { s.style.zIndex = i + 1; });
+  var wz = document.querySelector('.wz'); if (!wz) return;
+  var ks = [].slice.call(wz.querySelectorAll('.wz-k')), ss = [].slice.call(wz.querySelectorAll('.wz-s'));
+  var auf = wz.querySelector('.wz-auf'), name = wz.querySelector('.wz-name'), text = wz.querySelector('.wz-text'), zweit = wz.querySelector('.wz-zweit');
+  function zeig(i) {
+    ks.forEach(function (k, j) { k.classList.toggle('an', j === i); k.setAttribute('aria-selected', j === i ? 'true' : 'false'); });
+    ss.forEach(function (s, j) { s.classList.toggle('an', j === i); });
+    var k = ks[i];
+    auf.href = k.getAttribute('data-url');
+    name.textContent = k.getAttribute('data-titel');
+    text.innerHTML = k.getAttribute('data-text');
+    if (k.getAttribute('data-zweit')) { zweit.hidden = false; zweit.href = k.getAttribute('data-zweit'); } else { zweit.hidden = true; }
+  }
+  ks.forEach(function (k, i) {
+    k.addEventListener('click', function () { zeig(i); });
+    k.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { e.preventDefault(); var n = (i + 1) % ks.length; zeig(n); ks[n].focus(); }
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { e.preventDefault(); var p = (i - 1 + ks.length) % ks.length; zeig(p); ks[p].focus(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
